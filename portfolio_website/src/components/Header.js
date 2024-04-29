@@ -1,8 +1,10 @@
 import React from "react";
+import GlobeAnimation from "./GlobeAnimation";
 
 function Header() {
   return (
     <>
+    <GlobeAnimation/>
       {
         "G'day! My name is Lyall Beveridge, and this is my digital portfolio. Here, you'll find a showcase of my engineering and computer science projects, each detailed with insights into my creative process and the technologies I use."
       }
@@ -10,7 +12,7 @@ function Header() {
       {
         "This website itself is not only a demonstration of my frontend web development skills but is also a testament to hackerzines, which were famous in the the early ???'s. [LINK]"
       }
-      <div>
+      {/* <div>
         <br />
         {"> "}
         <a
@@ -31,7 +33,7 @@ function Header() {
         </a>
         <br />
         {"> "} <a href="mailto:lyall.beveridge@gmail.com">Email</a>
-      </div>
+      </div> */}
     </>
   );
 }
