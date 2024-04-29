@@ -6,11 +6,11 @@ function Header() {
       {
         "G'day! My name is Lyall Beveridge, and this is my digital portfolio. Here, you'll find a showcase of my engineering and computer science projects, each detailed with insights into my creative process and the technologies I use."
       }
+      <br/><br/>
+      {
+        "This website itself is not only a demonstration of my frontend web development skills but is also a testament to hackerzines, which were famous in the the early ???'s. [LINK]"
+      }
       <div>
-        <br />
-        {"> "} Sydney, Australia
-        <br />
-        {"> "} University of New South Wales Graduate
         <br />
         {"> "}
         <a

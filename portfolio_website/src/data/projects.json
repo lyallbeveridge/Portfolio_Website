@@ -2,11 +2,11 @@
   {
     "id": "project1",
     "title": "Project Title 1",
-    "date": "2022-01-15",
+    "date": "29-04-2024",
     "tags": ["Web Development", "React", "API"],
     "description": "Short description of the project.",
     "longDescription": "This is a more detailed description of the project, which can include the project's objectives, technologies used, challenges faced, and solutions implemented.",
-    "image": "url-to-image.jpg",
+    "coverImage": "img_brembo_me_smiling.jpg",
     "githubLink": "https://github.com/example/project1",
     "liveDemo": "https://example.com/project1",
     "achievements": ["Achievement 1", "Achievement 2"]
@@ -14,11 +14,11 @@
   {
     "id": "project2",
     "title": "Project Title 2",
-    "date": "2023-04-20",
+    "date": "29-04-2022",
     "tags": ["Data Analysis", "Python"],
     "description": "Short description of the project.",
     "longDescription": "This is a more detailed description of the project. It covers aspects such as the analytical methods employed, the data sources, and the insights derived from the analysis.",
-    "image": "url-to-image2.jpg",
+    "coverImage": "img_brembo_me_smiling.jpg",
     "githubLink": "https://github.com/example/project2",
     "liveDemo": "https://example.com/project2",
     "achievements": ["Achievement 1", "Achievement 2"]
