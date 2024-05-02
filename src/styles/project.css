@@ -58,10 +58,3 @@
   cursor: pointer;
   padding-right: 8px;
 }
-
-.pattern::before {
-  content: "|\A|\A";
-  white-space: pre;
-  line-height: 1.5;
-  
-}

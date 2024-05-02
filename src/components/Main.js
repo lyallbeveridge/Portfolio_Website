@@ -3,12 +3,16 @@ import "../styles/main.css";
 import Header from "./Header";
 import Divider from "./Divider";
 import ProjectTimeline from "./ProjectTimeline";
+import TitleASCII from "./TitleASCII";
 
 function Main() {
   return (
     <div className="main-container">
+      <br/>
+      <button>Toggle theme</button>
       <Divider />
-      <h1>Lyall Beveridge</h1>
+      {/* <h1>Lyall Beveridge</h1> */}
+      <TitleASCII />
       BE (Mechatronics) & BSc (Computer Science)
       <br/>
       UNSW, '24

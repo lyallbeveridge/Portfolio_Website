@@ -12,22 +12,30 @@ function Project({ data }) {
     setExpanded(!expanded);
   };
 
+  // const [projectContainerHeight, setProjectContainerHeight] = useState(0);
+  // function generateSiderailTimelinePattern() {
+  //   const element = document.querySelector(".project-container");
+  //   const height = element.clientHeight;
+  //   const patternHeight = 20; // Set the height of each pattern segment
+
+  //   const patternCount = Math.ceil(height / patternHeight);
+
+  //   let pattern = "";
+  //   for (let i = 0; i < patternCount; i++) {
+  //     pattern.push("|", <br key={i} />);
+  //   }
+
+  //   return pattern;
+  // }
+
   return (
-    <div className="project-container">
+    <div className="project-container" id={`${data.id}-container`}>
       <div
         className="project-container-siderails"
         style={{ marginRight: "0.85vw" }}
       >
         {formatDate(data.date)}
-        {/* 
-          <br />
-          ||
-          <br />
-          ||
-          <br />
-          || 
-          */}
-        <div className="pattern"></div>
+        {/* <div className="pattern">{generateSiderailTimelinePattern()}</div> */}
       </div>
       <div className="project-container-center">
         <div className="project-header-container">
@@ -35,9 +43,6 @@ function Project({ data }) {
             <div>
               <h3>{data.title}</h3>
             </div>
-            {/* <div className="expand-btn">
-                expand (+)
-            </div> */}
           </div>
           {data.description && (
             <p className="project-subtitle">{data.description}</p>
@@ -57,7 +62,7 @@ function Project({ data }) {
         className="project-container-siderails"
         style={{ marginLeft: "0.85vw" }}
       >
-        <button onClick={toggleContentExpand}>{expanded ? '-' : '+'}</button>
+        <button onClick={toggleContentExpand}>{expanded ? "-" : "+"}</button>
       </div>
     </div>
   );

@@ -1,10 +1,13 @@
 import React from "react";
 import GlobeAnimation from "./GlobeAnimation";
+import ProfileAnimation from "./ProfileAnimation";
 
 function Header() {
   return (
     <>
-    <GlobeAnimation/>
+    {/* <GlobeAnimation/> */}
+    <ProfileAnimation/>
+    <br/>
       {
         "G'day! My name is Lyall Beveridge, and this is my digital portfolio. Here, you'll find a showcase of my engineering and computer science projects, each detailed with insights into my creative process and the technologies I use."
       }
