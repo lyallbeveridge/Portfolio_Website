@@ -10,6 +10,9 @@ A hacker zine style personal portfolio website for personal projects.
 - Rotating ASCII art scan of my smiling head
     - Can control the spin (FINALS style)
     - Different views of the spinner controlled by buttons on the bottom
+- Audio db of cultural moments
+    - 2PAC shot,
+    - Queen dead BBC broadcast
 
 # Fonts
 - [ASCII Text Art Generator](https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=LB)
