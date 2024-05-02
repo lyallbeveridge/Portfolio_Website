@@ -7,9 +7,16 @@ function Project({ data }) {
   const coverImage = require(`../images/${data.coverImage}`);
 
   // Handle the expansion of the project main content
-  const [expanded, setExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   const toggleContentExpand = () => {
-    setExpanded(!expanded);
+    if (!isExpanded) {
+      setTimeout(() => {
+        document
+          .getElementById(`${data.id}-container`)
+          .scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 10);
+    }
+    setIsExpanded(!isExpanded);
   };
 
   // const [projectContainerHeight, setProjectContainerHeight] = useState(0);
@@ -52,17 +59,17 @@ function Project({ data }) {
           <img className="cover-image" src={coverImage} alt={data.title} />
         </div>
         <br />
-        <div className="project-main-content">
-          {expanded
-            ? data.longDescription && <p>{data.longDescription}</p>
-            : null}
-        </div>
+        {isExpanded && (
+          <div className="project-main-content">{data.longDescription}</div>
+        )}
       </div>
       <div
         className="project-container-siderails"
         style={{ marginLeft: "0.85vw" }}
       >
-        <button className="expand-project-btn" onClick={toggleContentExpand}>{expanded ? "-" : "+"}</button>
+        <button className="expand-project-btn" onClick={toggleContentExpand}>
+          {isExpanded ? "-" : "+"}
+        </button>
       </div>
     </div>
   );

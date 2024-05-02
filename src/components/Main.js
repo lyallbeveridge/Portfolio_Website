@@ -17,11 +17,48 @@ function Main() {
       BE (Mechatronics) & BSc (Computer Science)
       <br />
       UNSW, '24
+      <div id="contents-links">
+        <div>
+          {"> "}{" "}
+          <a
+            href="#contact"
+            onClick={(event) => {
+              event.preventDefault();
+              document
+                .querySelector("#skills")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Skills
+          </a>
+        </div>
+        <div>
+          {"> "}{" "}
+          <a
+            href="#projects"
+            onClick={(event) => {
+              event.preventDefault();
+              document
+                .querySelector("#projects")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Projects
+          </a>
+        </div>
+      </div>
       <IconLinkTray />
       <Divider />
       <OpeningSection />
       <Divider />
-      <h1>Projects</h1>
+      <div id="skills">
+        <h1>Skills</h1>
+      </div>
+      <Divider />
+      <Divider />
+      <div id="projects">
+        <h1>Projects</h1>
+      </div>
       <Divider />
       <ProjectTimeline />
     </div>
