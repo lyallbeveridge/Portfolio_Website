@@ -5,6 +5,7 @@ import Divider from "./Divider";
 import ProjectTimeline from "./ProjectTimeline";
 import TitleASCII from "./TitleASCII";
 import IconLinkTray from "./IconLinkTray";
+import Footer from "./Footer";
 
 function Main() {
   return (
@@ -61,6 +62,8 @@ function Main() {
       </div>
       <Divider />
       <ProjectTimeline />
+      <Divider />
+      <Footer />
     </div>
   );
 }
