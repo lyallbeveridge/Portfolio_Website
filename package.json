@@ -1,6 +1,6 @@
 {
   "name": "portfolio_website",
-  "homepage": "lyallbeveridge.github.io/Portfolio_Website",
+  "homepage": "https://lyallbeveridge.github.io/Portfolio_Website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
