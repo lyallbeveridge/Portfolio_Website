@@ -62,7 +62,7 @@ function Project({ data }) {
         className="project-container-siderails"
         style={{ marginLeft: "0.85vw" }}
       >
-        <button onClick={toggleContentExpand}>{expanded ? "-" : "+"}</button>
+        <button className="expand-project-btn" onClick={toggleContentExpand}>{expanded ? "-" : "+"}</button>
       </div>
     </div>
   );

@@ -1,0 +1,7 @@
+.icon-btn {
+  transition: transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.05);
+}

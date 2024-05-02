@@ -23,6 +23,10 @@ body {
   background-color: #131314;
 }
 
+button {
+  cursor: pointer;
+}
+
 .body-container {
   display: flex;
   flex-direction: column;

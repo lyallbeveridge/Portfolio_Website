@@ -10,3 +10,18 @@
   overflow-x: hidden;
   font-size: 13px;
 }
+
+#icon-button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.icon-btn {
+  transition: transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.05);
+}
