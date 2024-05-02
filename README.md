@@ -8,6 +8,8 @@ A hacker zine style personal portfolio website for personal projects.
 - Search
 - Window terminal emulator style, previous commands, help with other features
 - Rotating ASCII art scan of my smiling head
+    - Can control the spin (FINALS style)
+    - Different views of the spinner controlled by buttons on the bottom
 
 # Fonts
 - [ASCII Text Art Generator](https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=LB)
