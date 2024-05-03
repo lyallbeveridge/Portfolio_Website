@@ -1,12 +1,13 @@
 import React from "react";
 import Divider from "./Divider";
+import "../styles/main.css";
 
-export default function SectionHeader({ children}) {
+export default function SectionHeader({ children, containerDivId }) {
   return (
     <>
-    <Divider />
-      {children}
-    <Divider />
+      <Divider />
+      <div id="containerDivId" className="section-header">{children}</div>
+      <Divider />
     </>
   );
 }

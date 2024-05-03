@@ -5,12 +5,12 @@ A hacker zine style personal portfolio website for personal projects.
 
 # Feature Ideas
 - [X] Buttons with icons
-- [ ] Typing the initial lettering
+- [X] Typing the initial lettering
 - [ ] Make the Divider into a section component with child input
-- [ ] Retyping the catchy messages of the
+- [X] Retyping the catchy messages of the
 - [ ] Favicon
-- [ ] Animation transitions for the text expand
-- [ ] RHS timeline, thumbnails, month & year
+- [X] Animation transitions for the text expand
+- [X] RHS timeline, thumbnails, month & year
 - [ ] Search
 - [ ] Window terminal emulator style, previous commands, help with other features
 - [ ] Rotating ASCII art scan of my smiling head

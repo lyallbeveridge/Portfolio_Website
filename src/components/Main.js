@@ -13,14 +13,14 @@ function Main() {
     <div className="main-container">
       <br />
       <button>Toggle theme</button>
-      <SectionHeader>
+      <SectionHeader containerDivId="title-section-header">
         <TitleSection />
       </SectionHeader>
       <SectionContent containerDivId="opening-section">
         <OpeningSection />
       </SectionContent>
 
-      <SectionHeader>
+      <SectionHeader containerDivId="skills-section-header">
         <div id="skills">
           <h1>Skills</h1>
         </div>
@@ -38,7 +38,7 @@ function Main() {
         </div>
       </SectionContent>
 
-      <SectionHeader>
+      <SectionHeader containerDivId="projects-section-header">
         <div id="projects">
           <h1>Projects</h1>
         </div>

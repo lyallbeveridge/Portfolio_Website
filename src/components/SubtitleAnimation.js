@@ -3,6 +3,8 @@ import "../styles/subtitleAnimation.css";
 
 export default function SubtitleAnimation() {
   const subtitleTextOptions = [
+    "bEng (Mechatronic) (UNSW)",
+    "bSci (Computer Science) (UNSW)",
     "Full stack developer",
     "Software engineer",
     "Hardware enthusiast",
@@ -24,7 +26,7 @@ export default function SubtitleAnimation() {
         setIndex(index - 1);
 
         if (index === 0) {
-          setSubtitlePhraseIndex((subtitlePhraseIndex + 1) % subtitleTextOptions.length); 
+          setSubtitlePhraseIndex((subtitlePhraseIndex + 1) % subtitleTextOptions.length);
           setIsDeleting(false);
         }
       }, typingSpeed);

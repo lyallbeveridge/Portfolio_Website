@@ -1,6 +1,7 @@
 #contents-links {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -10,12 +11,12 @@
 }
 
 #subtitle-animation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1em;
-    color: chartreuse;
-    font-size: larger;
-    font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  color: chartreuse;
+  font-size: larger;
+  font-weight: 100;
 }

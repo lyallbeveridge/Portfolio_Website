@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function SectionHeader({ children, containerDivId }) {
+export default function SectionContent({ children, containerDivId }) {
   return (
-    <div id={containerDivId}>
+    <div id={containerDivId} className="section-content">
       {children}
     </div>
   );

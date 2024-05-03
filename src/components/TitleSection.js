@@ -8,7 +8,7 @@ export default function TitleSection() {
 
 
   return (
-    <div>
+    <>
       <TitleASCII />
       <SubtitleAnimation />
       <div id="contents-links">
@@ -42,6 +42,6 @@ export default function TitleSection() {
         </div>
       </div>
       <IconLinkTray />
-    </div>
+    </>
   );
 }
