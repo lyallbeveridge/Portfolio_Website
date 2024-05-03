@@ -9,10 +9,23 @@ import SectionHeader from "./SectionHeader";
 import SectionContent from "./SectionContent";
 
 function Main() {
+  function toggleLightMode() {
+    document.body.classList.toggle('light-mode');
+    document.querySelectorAll('button').forEach((element) => {
+      element.classList.toggle('light-mode');
+    });
+
+    document.getElementById('main-container').classList.toggle('light-mode');
+    document.querySelectorAll('.icon-svg').forEach((element) => {
+      element.classList.toggle('light-mode');
+    });
+
+  }
+
   return (
-    <div className="main-container">
+    <div id="main-container">
       <br />
-      <button>Toggle theme</button>
+      <button onClick={toggleLightMode}>Toggle theme</button>
       <SectionHeader containerDivId="title-section-header">
         <TitleSection />
       </SectionHeader>

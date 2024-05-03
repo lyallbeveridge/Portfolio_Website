@@ -24,6 +24,7 @@ A hacker zine style personal portfolio website for personal projects.
 - [ASCII Text Art Generator](https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=LB)
 - [ASCII Image Art Generator](https://www.asciiart.eu/image-to-ascii)
 - [ASCII to SVG](https://ivanceras.github.io/svgbob-editor/)
+- [ASCII Animations](https://ascii.co.uk/animated)
 
 
 # Inspiration

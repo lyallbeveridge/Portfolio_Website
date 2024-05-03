@@ -1,3 +1,8 @@
+:root {
+    --icon-fill-light: black;
+    --icon-fill-dark: whitesmoke;
+}
+
 #icon-button-div {
     display: flex;
     flex-direction: row;
@@ -12,4 +17,12 @@
 
 .icon-btn:hover {
   transform: scale(1.05);
+}
+
+.icon-svg {
+    fill: var(--icon-fill-dark);
+}
+
+.icon-svg.light-mode {
+    fill: var(--icon-fill-light);
 }

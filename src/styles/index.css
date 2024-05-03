@@ -1,3 +1,7 @@
+:root {
+  --root-font: monospace
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -24,8 +28,25 @@ body {
   background-color: #131314;
 }
 
+body.light-mode {
+    background-color: var(--background-color-light);
+    color: var(--font-color-light);
+  }
+
 button {
   cursor: pointer;
+  border: 3px solid var(--background-color-light);
+  background-color: var(--background-color-dark);
+  color: var(--font-color-dark);
+  text-align: center;
+  vertical-align: middle;
+  font-family: var(--root-font);
+}
+
+button.light-mode {
+  border: 3px solid var(--background-color-dark);
+  background-color: var(--background-color-light);
+  color: var(--font-color-light);
 }
 
 .body-container {

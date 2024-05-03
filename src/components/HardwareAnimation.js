@@ -40,7 +40,7 @@ export default function HardwareAnimation() {
     loader.load(coolBeansModel, function (glb) {
       glb.scene.traverse(function (node) {
         if (node.isMesh) {
-          node.material = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true });
+          node.material = new THREE.MeshBasicMaterial({ color: 0x7fff00, wireframe: false });
         }
       });
 
