@@ -37,38 +37,46 @@ function Project({ data }) {
 
   return (
     <div className="project-container" id={`${data.id}-container`}>
-      <div
-        className="project-container-siderails"
-        style={{ marginRight: "0.85vw" }}
-      >
-        <div>{formatDate(data.date)}</div>
-        <div className="timeline-vline">|</div>
+      <div className="project-container-siderails">
         {/* <div className="pattern">{generateSiderailTimelinePattern()}</div> */}
       </div>
-      <div className="project-container-center">
-        <div className="project-header-container">
+      <div className="project-header-container">
+        <div className="project-container-siderails">
+          {formatDate(data.date)}
+        </div>
+        <div className="project-title-subtitle-container">
           <div className="project-title-container">
             <div>
               <h3>{data.title}</h3>
             </div>
           </div>
-          {data.description && (
-            <p className="project-subtitle">{data.description}</p>
-          )}
+          <p className="project-subtitle">{data.description}</p>
         </div>
-        <div className="cover-image-container">
-          <img className="cover-image" src={coverImage} alt={data.title} />
+        <div className="project-container-siderails">
+          <button className="expand-project-btn" onClick={toggleContentExpand}>
+            {isExpanded ? "-" : "+"}
+          </button>
         </div>
-        <br />
-          <div className={isExpanded ? "project-main-content expanded" : "project-main-content"}>{data.longDescription}</div>
       </div>
-      <div
-        className="project-container-siderails"
-        style={{ marginLeft: "0.85vw" }}
-      >
-        <button className="expand-project-btn" onClick={toggleContentExpand}>
-          {isExpanded ? "-" : "+"}
-        </button>
+      <div className="project-container-center">
+        <div className="timeline-vline project-container-siderails">
+        </div>
+        <div className="project-content-container">
+          <div className="cover-image-container">
+            <img className="cover-image" src={coverImage} alt={data.title} />
+          </div>
+          <br />
+          <div
+            className={
+              isExpanded
+                ? "project-main-content expanded"
+                : "project-main-content"
+            }
+          >
+            {data.longDescription}
+          </div>
+        </div>
+        <div className="project-container-siderails"></div>
       </div>
     </div>
   );

@@ -1,17 +1,22 @@
 .project-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
 }
 
 .project-container-center {
   width: 100%;
+  display: flex;
+    flex-direction: row;
+
 }
 
 .project-header-container {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-header-container h3 {
@@ -27,7 +32,7 @@
 
 .project-subtitle {
   font-weight: 400;
-  margin-top: 0;
+  margin: 0;
   font-size: 12px;
   display: flex;
   flex-direction: row;
@@ -35,13 +40,25 @@
   justify-content: center;
 }
 
+.project-content-container {
+    margin: 1em 0em;
+}
+
+.project-title-subtitle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .project-container-siderails {
   width: 45px;
+  min-width: 45px;
   text-align: center;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cover-image-container {
@@ -62,8 +79,8 @@
 }
 
 .project-main-content.expanded {
-    max-height: 1000px; /* Adjust this value as needed */
-  }
+  max-height: 1000px; /* Adjust this value as needed */
+}
 
 .expand-btn {
   font-size: 11px;
@@ -80,5 +97,7 @@
 }
 
 .timeline-vline {
-  width: 1px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ctext x='10' y='15' text-anchor='middle' font-size='16px' fill='%23FFFFFF' font-family='monospace'%3E|%3C/text%3E%3C/svg%3E");
+  background-repeat: repeat-y;
+  background-position: center;
 }

@@ -9,6 +9,9 @@ const ProjectTimeline = () => {
       {projects.map((projectJSON) => (
         <Project data={projectJSON} key={projectJSON.id} />
       ))}
+      <div className="project-timeline-footer">
+        <div className="timeline-vline-start-icon">*</div>
+      </div>
     </>
   );
 };

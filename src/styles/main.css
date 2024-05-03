@@ -3,6 +3,7 @@
   --background-color-dark: #131314;
   --font-color-light: #000000;
   --font-color-dark: #ffffff;
+  --max-body-width: 650px;
 }
 
 #main-container {
@@ -10,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  max-width: 650px;
+  max-width: var(--max-body-width);
   width: 100%;
   width: calc(100% - 1em);
   box-sizing: border-box;
@@ -58,7 +59,7 @@ pre {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  /* gap: 1em; */
 }
 
 .section-content pre {

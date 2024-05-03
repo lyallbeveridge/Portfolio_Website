@@ -1,3 +1,18 @@
 #project-section {
     width: 100%;
 }
+
+.project-timeline-footer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.timeline-vline-start-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+
+}
