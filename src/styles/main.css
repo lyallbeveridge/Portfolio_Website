@@ -18,7 +18,7 @@ a {
 
 ul {
   list-style-type: none;
-  margin: 1em;
+  margin: 0.75em 1em 0.75em 1em;
   padding-right: 1em;
   padding-left: 0;
 }
@@ -32,6 +32,7 @@ ul li::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.5em;
 }
 
 .section-content {
@@ -39,4 +40,11 @@ ul li::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1em;
+}
+
+.section-content pre {
+    white-space: pre-wrap;
+    margin: 0;
+    line-height: 1.5em;
 }

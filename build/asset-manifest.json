@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio_Website/static/css/main.701af2a7.css",
-    "main.js": "/Portfolio_Website/static/js/main.e6490411.js",
+    "main.css": "/Portfolio_Website/static/css/main.fd5e988c.css",
+    "main.js": "/Portfolio_Website/static/js/main.0bc6e03c.js",
     "static/media/img_brembo_me_smiling.jpg": "/Portfolio_Website/static/media/img_brembo_me_smiling.64f8d1a6d474977283f8.jpg",
     "index.html": "/Portfolio_Website/index.html",
-    "main.701af2a7.css.map": "/Portfolio_Website/static/css/main.701af2a7.css.map",
-    "main.e6490411.js.map": "/Portfolio_Website/static/js/main.e6490411.js.map"
+    "main.fd5e988c.css.map": "/Portfolio_Website/static/css/main.fd5e988c.css.map",
+    "main.0bc6e03c.js.map": "/Portfolio_Website/static/js/main.0bc6e03c.js.map"
   },
   "entrypoints": [
-    "static/css/main.701af2a7.css",
-    "static/js/main.e6490411.js"
+    "static/css/main.fd5e988c.css",
+    "static/js/main.0bc6e03c.js"
   ]
 }
