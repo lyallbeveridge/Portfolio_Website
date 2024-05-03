@@ -8,14 +8,7 @@ function OpeningSection() {
     <>
       {/* <GlobeAnimation/> */}
       <ProfileAnimation />
-      {/* <HardwareAnimation /> */}
-      <canvas
-        style={{
-          width: "100px",
-          height: "100px",
-          backgroundColor: "whitesmoke",
-        }}
-      ></canvas>
+      <HardwareAnimation />
       <pre>
         {
           "G'day! My name is Lyall Beveridge, and this is my digital portfolio. Here, you'll find a showcase of my engineering and computer science projects, each detailed with insights into my creative process and the technologies I use.\n\nThis website itself is not only a demonstration of my frontend web development skills but is also a testament to hackerzines, which were famous in the the early ???'s. [LINK]"
