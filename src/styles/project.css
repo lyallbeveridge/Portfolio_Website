@@ -38,6 +38,10 @@
 .project-container-siderails {
   width: 45px;
   text-align: center;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cover-image-container {
@@ -52,19 +56,14 @@
 }
 
 .project-main-content {
-  animation: fadeInDown 0.5s ease-in-out;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
 }
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    /* transform: translateY(-10px); */
+.project-main-content.expanded {
+    max-height: 1000px; /* Adjust this value as needed */
   }
-  to {
-    opacity: 1;
-    /* transform: translateY(0); */
-  }
-}
 
 .expand-btn {
   font-size: 11px;
@@ -78,4 +77,8 @@
   cursor: pointer;
   width: 27px;
   height: 27px;
+}
+
+.timeline-vline {
+  width: 1px;
 }

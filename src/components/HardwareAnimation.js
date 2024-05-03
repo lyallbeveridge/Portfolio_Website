@@ -3,7 +3,8 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import coolBeansModel from "../assets/CoolBeans.glb";
+// import coolBeansModel from "../assets/CoolBeans.glb";
+import toolsModel from "../assets/Tools.glb";
 // import shapeModel from "../assets/shape.glb";
 
 export default function HardwareAnimation() {
@@ -19,7 +20,7 @@ export default function HardwareAnimation() {
       0.5,
       500
     );
-    camera.position.z = 2;
+    camera.position.y = 10;
 
     // Set up the renderer
     const renderer = new THREE.WebGLRenderer({
@@ -37,7 +38,7 @@ export default function HardwareAnimation() {
 
     // Add custom model to the scene
     const loader = new GLTFLoader();
-    loader.load(coolBeansModel, function (glb) {
+    loader.load(toolsModel, function (glb) {
       glb.scene.traverse(function (node) {
         if (node.isMesh) {
           node.material = new THREE.MeshBasicMaterial({ color: 0x7fff00, wireframe: false });

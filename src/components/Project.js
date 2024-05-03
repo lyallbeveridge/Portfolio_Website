@@ -41,7 +41,8 @@ function Project({ data }) {
         className="project-container-siderails"
         style={{ marginRight: "0.85vw" }}
       >
-        {formatDate(data.date)}
+        <div>{formatDate(data.date)}</div>
+        <div className="timeline-vline">|</div>
         {/* <div className="pattern">{generateSiderailTimelinePattern()}</div> */}
       </div>
       <div className="project-container-center">
@@ -59,9 +60,7 @@ function Project({ data }) {
           <img className="cover-image" src={coverImage} alt={data.title} />
         </div>
         <br />
-        {isExpanded && (
-          <div className="project-main-content">{data.longDescription}</div>
-        )}
+          <div className={isExpanded ? "project-main-content expanded" : "project-main-content"}>{data.longDescription}</div>
       </div>
       <div
         className="project-container-siderails"
