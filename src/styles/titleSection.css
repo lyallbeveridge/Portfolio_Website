@@ -1,0 +1,21 @@
+#contents-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.content-link {
+  display: flex;
+  flex-direction: row;
+}
+
+#subtitle-animation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    color: chartreuse;
+    font-size: larger;
+    font-weight: 100;
+}

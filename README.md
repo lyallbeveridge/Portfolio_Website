@@ -4,15 +4,16 @@ A hacker zine style personal portfolio website for personal projects.
 
 
 # Feature Ideas
-- [] Buttons with icons
-- [] Typing the initial lettering
-- [] Retyping the catchy messages of the 
-- [] Favicon
-- [] Animation transitions for the text expand
-- [] RHS timeline, thumbnails, month & year
-- [] Search
-- [] Window terminal emulator style, previous commands, help with other features
-- [] Rotating ASCII art scan of my smiling head
+- [X] Buttons with icons
+- [ ] Typing the initial lettering
+- [ ] Make the Divider into a section component with child input
+- [ ] Retyping the catchy messages of the
+- [ ] Favicon
+- [ ] Animation transitions for the text expand
+- [ ] RHS timeline, thumbnails, month & year
+- [ ] Search
+- [ ] Window terminal emulator style, previous commands, help with other features
+- [ ] Rotating ASCII art scan of my smiling head
     - Can control the spin (FINALS style)
     - Different views of the spinner controlled by buttons on the bottom
 - Audio db of cultural moments
