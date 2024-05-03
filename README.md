@@ -30,3 +30,9 @@ A hacker zine style personal portfolio website for personal projects.
 - [HTP: Hack The Planet](https://www.exploit-db.com/papers/25306)
 - [Phrack](http://www.phrack.org/)
 - [Pinterest: How to Make a Zine](https://www.pinterest.com.au/pin/37576978132730528/)
+
+# Github Pages Deployment
+`> npm run deploy`
+`> git add .`
+`> ...`
+`> git push?`
