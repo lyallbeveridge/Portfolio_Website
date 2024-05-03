@@ -32,6 +32,7 @@ A hacker zine style personal portfolio website for personal projects.
 - [Pinterest: How to Make a Zine](https://www.pinterest.com.au/pin/37576978132730528/)
 
 # Github Pages Deployment
+This is hard to work with for some reason.
 `> npm run deploy`
 `> git add .`
 `> ...`
