@@ -14,7 +14,9 @@ function Main() {
     document.querySelectorAll('button').forEach((element) => {
       element.classList.toggle('light-mode');
     });
-
+    document.querySelectorAll('.timeline-vline').forEach((element) => {
+      element.classList.toggle('light-mode');
+    });
     document.getElementById('main-container').classList.toggle('light-mode');
     document.querySelectorAll('.icon-svg').forEach((element) => {
       element.classList.toggle('light-mode');

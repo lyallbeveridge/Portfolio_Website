@@ -2,23 +2,53 @@
 # Portfolio_website
 A hacker zine style personal portfolio website for personal projects.
 
+# Projects
+- Thesis
+- Remote control
+- Card trading website
+- SLAM car
+- Arduino PCB game
+- Party Alarm
+- AI Phone installed (Do call 2 prayer upgrade)
+- Payment management system
+- Trading twitter bot
+- MATLAB SLAM
+- MATLAB Control Systems
+- This website
+
+
+# Bugs
+- [ ] Delay before project section disappears
+- [ ] Google pixel stretched ascii ART (space shrinking)
+- [ ] Messenger preview stretched ascii ART
+- [ ] Images massive on zoom out
+
+# MVP TODO
+- [ ] Fix introductory text to be shorter, not mention my name twice and be engaging.
+- [ ] Fill in the projects (aim for 10)
+- [ ] Have a project text interpreter
+- [ ] Make engaging catch phrases
+- [ ] Put ASCII art in the skills section and fill that out (a grid would be nice)
+- [ ] Favicon
+- [ ] Add some sort of third section (showcase, qualifications)
+- [X] Fix timeline VLine toggle fade
+
 
 # Feature Ideas
+- [ ] Sticky header with navigation and toggle theme button: fade after scrolling past the last section of contents (?)
+- [ ] Window terminal emulator style, previous commands, help with other features
+- [ ] Search
+- [ ] Ranking system: timeline, complexity (stars), time invested
+- [ ] Tags for filtering: software, hardware
+- [ ] Interactive bouncing ball simulator
+- [ ] Rotating ASCII art scan of my smiling head
+- [ ] Make the Divider into a section component with child input
 - [X] Buttons with icons
 - [X] Typing the initial lettering
-- [ ] Make the Divider into a section component with child input
 - [X] Retyping the catchy messages of the
-- [ ] Favicon
 - [X] Animation transitions for the text expand
 - [X] RHS timeline, thumbnails, month & year
-- [ ] Search
-- [ ] Window terminal emulator style, previous commands, help with other features
-- [ ] Rotating ASCII art scan of my smiling head
-    - Can control the spin (FINALS style)
-    - Different views of the spinner controlled by buttons on the bottom
-- Audio db of cultural moments
-    - 2PAC shot,
-    - Queen dead BBC broadcast
+
 
 # Fonts
 - [ASCII Text Art Generator](https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=LB)

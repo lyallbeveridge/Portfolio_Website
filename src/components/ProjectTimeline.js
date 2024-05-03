@@ -10,7 +10,7 @@ const ProjectTimeline = () => {
         <Project data={projectJSON} key={projectJSON.id} />
       ))}
       <div className="project-timeline-footer">
-        <div className="timeline-vline-start-icon">*</div>
+        <div className="project-container-siderails" style={{fontSize: "28px"}}>*</div>
       </div>
     </>
   );
