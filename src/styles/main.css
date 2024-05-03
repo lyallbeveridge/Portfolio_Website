@@ -27,6 +27,10 @@ ul li::before {
   content: "> ";
 }
 
+pre {
+    text-size-adjust: none;
+}
+
 .section-header {
   display: flex;
   flex-direction: column;
