@@ -2,12 +2,15 @@ import React from "react";
 import TitleASCII from "./TitleASCII";
 import IconLinkTray from "./IconLinkTray";
 import "../styles/titleSection.css";
+import SubtitleAnimation from "./SubtitleAnimation";
 
 export default function TitleSection() {
+
+
   return (
     <div>
       <TitleASCII />
-      <div id="subtitle-animation">{"> "}Full stack developer_</div>
+      <SubtitleAnimation />
       <div id="contents-links">
         <div className="content-link">
           {"> "}&nbsp;
