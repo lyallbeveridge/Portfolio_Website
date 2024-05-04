@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1000" height="1000"><g transform="matrix(6.578947368421052,0,0,6.578947368421052,5.684341886080802e-14,131.5789473684211)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="152" height="112"><svg xmlns="http://www.w3.org/2000/svg" width="152" height="112" class="svgbob"><style>.svgbob line, .svgbob path, .svgbob circle, .svgbob rect, .svgbob polygon {
+    stroke: black;
+    stroke-width: 2;
+    stroke-opacity: 1;
+    fill-opacity: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+}
+.svgbob text {
+    white-space: pre;
+    fill: black;
+    font-family: Iosevka Fixed, monospace;
+    font-size: 14px;
+}
+.svgbob rect.backdrop {
+    stroke: none;
+    fill: white;
+}
+.svgbob .broken {
+    stroke-dasharray: 8;
+}
+.svgbob .filled {
+    fill: black;
+}
+.svgbob .bg_filled {
+    fill: white;
+    stroke-width: 1;
+}
+.svgbob .nofill {
+    fill: white;
+}
+.svgbob .end_marked_arrow {
+    marker-end: url(#arrow);
+}
+.svgbob .start_marked_arrow {
+    marker-start: url(#arrow);
+}
+.svgbob .end_marked_diamond {
+    marker-end: url(#diamond);
+}
+.svgbob .start_marked_diamond {
+    marker-start: url(#diamond);
+}
+.svgbob .end_marked_circle {
+    marker-end: url(#circle);
+}
+.svgbob .start_marked_circle {
+    marker-start: url(#circle);
+}
+.svgbob .end_marked_open_circle {
+    marker-end: url(#open_circle);
+}
+.svgbob .start_marked_open_circle {
+    marker-start: url(#open_circle);
+}
+.svgbob .end_marked_big_open_circle {
+    marker-end: url(#big_open_circle);
+}
+.svgbob .start_marked_big_open_circle {
+    marker-start: url(#big_open_circle);
+}<!--separator--></style><defs><marker id="arrow" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,0 0,4 4,2 0,0"></polygon></marker><marker id="diamond" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,2 2,0 4,2 2,4 0,2"></polygon></marker><marker id="circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="2" class="filled"></circle></marker><marker id="open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="2" class="bg_filled"></circle></marker><marker id="big_open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="3" class="bg_filled"></circle></marker></defs><rect class="backdrop" x="0" y="0" width="152" height="112"></rect><rect x="8" y="16" width="8" height="16" class="solid filled" rx="0"></rect><rect x="16" y="16" width="8" height="16" class="solid filled" rx="0"></rect><rect x="8" y="32" width="8" height="16" class="solid filled" rx="0"></rect><rect x="16" y="32" width="8" height="16" class="solid filled" rx="0"></rect><rect x="8" y="48" width="8" height="16" class="solid filled" rx="0"></rect><rect x="16" y="48" width="8" height="16" class="solid filled" rx="0"></rect><rect x="8" y="64" width="8" height="16" class="solid filled" rx="0"></rect><rect x="16" y="64" width="8" height="16" class="solid filled" rx="0"></rect><rect x="8" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="16" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="24" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="32" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="40" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="48" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="56" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="88" y="16" width="8" height="16" class="solid filled" rx="0"></rect><rect x="96" y="16" width="8" height="16" class="solid filled" rx="0"></rect><rect x="104" y="16" width="8" height="16" class="solid filled" rx="0"></rect><rect x="112" y="16" width="8" height="16" class="solid filled" rx="0"></rect><rect x="120" y="16" width="8" height="16" class="solid filled" rx="0"></rect><rect x="128" y="16" width="8" height="16" class="solid filled" rx="0"></rect><rect x="88" y="32" width="8" height="16" class="solid filled" rx="0"></rect><rect x="96" y="32" width="8" height="16" class="solid filled" rx="0"></rect><rect x="128" y="32" width="8" height="16" class="solid filled" rx="0"></rect><rect x="136" y="32" width="8" height="16" class="solid filled" rx="0"></rect><rect x="88" y="48" width="8" height="16" class="solid filled" rx="0"></rect><rect x="96" y="48" width="8" height="16" class="solid filled" rx="0"></rect><rect x="104" y="48" width="8" height="16" class="solid filled" rx="0"></rect><rect x="112" y="48" width="8" height="16" class="solid filled" rx="0"></rect><rect x="120" y="48" width="8" height="16" class="solid filled" rx="0"></rect><rect x="128" y="48" width="8" height="16" class="solid filled" rx="0"></rect><rect x="88" y="64" width="8" height="16" class="solid filled" rx="0"></rect><rect x="96" y="64" width="8" height="16" class="solid filled" rx="0"></rect><rect x="128" y="64" width="8" height="16" class="solid filled" rx="0"></rect><rect x="136" y="64" width="8" height="16" class="solid filled" rx="0"></rect><rect x="88" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="96" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="104" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="112" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="120" y="80" width="8" height="16" class="solid filled" rx="0"></rect><rect x="128" y="80" width="8" height="16" class="solid filled" rx="0"></rect></svg></svg></g></svg>
