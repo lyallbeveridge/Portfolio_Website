@@ -1,10 +1,10 @@
 [
   {
-    "id": "project1",
-    "title": "Project Title 1",
+    "id": "thesis",
+    "title": "Undergraduate Thesis Project",
     "date": "29-04-2024",
     "tags": ["Web Development", "React", "API"],
-    "description": "Short description of the project.",
+    "description": "Device ",
     "longDescription": "This is a more detailed description of the project, which can include the project's objectives, technologies used, challenges faced, and solutions implemented.",
     "coverImage": "img_brembo_me_smiling.jpg",
     "githubLink": "https://github.com/example/project1",
