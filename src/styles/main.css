@@ -20,7 +20,6 @@
   background-color: var(--background-color-dark);
 }
 
-
 #main-container.light-mode {
   background-color: var(--background-color-light);
   color: var(--font-color-light);
@@ -51,7 +50,6 @@ pre {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5em;
 }
 
 .section-content {
@@ -66,4 +64,13 @@ pre {
   white-space: pre-wrap;
   margin: 0;
   line-height: 1.5em;
+}
+
+.section-content img{
+  max-width: 100%;
+}
+
+.project-main-content img {
+  max-height: 10em;
+  margin: 0 2em;
 }

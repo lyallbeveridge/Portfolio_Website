@@ -26,6 +26,7 @@ function Main() {
 
   return (
     <div id="main-container">
+      <div style={{position: "sticky", top: 0, zIndex: 100}}>header</div>
       <br />
       <button onClick={toggleLightMode}>Toggle theme</button>
       <SectionHeader containerDivId="title-section-header">
@@ -35,10 +36,8 @@ function Main() {
         <OpeningSection />
       </SectionContent>
 
-      <SectionHeader containerDivId="skills-section-header">
-        <div id="skills">
+      <SectionHeader containerDivId="skills">
           <h1>Skills</h1>
-        </div>
       </SectionHeader>
       <SectionContent containerDivId="skills-section">
         <div id="skills-list">
@@ -53,10 +52,8 @@ function Main() {
         </div>
       </SectionContent>
 
-      <SectionHeader containerDivId="projects-section-header">
-        <div id="projects">
+      <SectionHeader containerDivId="projects">
           <h1>Projects</h1>
-        </div>
       </SectionHeader>
       <SectionContent containerDivId="project-section">
         <ProjectTimeline />

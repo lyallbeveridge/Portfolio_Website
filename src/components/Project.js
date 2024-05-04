@@ -1,10 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/project.css";
 import { formatDate } from "../utils/helpers";
+import ReactMarkdown from "react-markdown";
+import openingSectionContent from "../content/opening-section.md";
 
 function Project({ data }) {
   // Dynamically import the cover image
-  const coverImage = require(`../images/${data.coverImage}`);
+  // const coverImage = require(`../images/${data.coverImage}`);
+  const coverImage = require(`C:\\Users\\lyall\\Documents\\Portfolio_Website\\src\\content\\images\\on-desk-in-stand.png`);
+  // const mainContentMarkdown = requi  re(`/Portfolio_Website/content/${data.id}.md`);
+
+  // Cover image
+
+  // Convert the main project content from markdown
+  const [mainContent, setMainContent] = useState("");
+  useEffect(() => {
+    // Cover image (which is a static png file)
+    // fetch(`/Portfolio_Website/content/images/${data.coverImage}`)
+    //   .then((response) => response.blob())
+    //   .then((blob) => {
+    //     const url = URL.createObjectURL(blob);
+    //     const img = new Image();
+    //     img.src = url;
+    //     img.onload = () => {
+    //       URL.revokeObjectURL(url);
+    //     };
+    //   });
+
+    // Main content
+    fetch(`/Portfolio_Website/content/${data.id}.md`)
+      .then((response) => response.text())
+      .then((data) => {
+        setMainContent(data);
+      });
+  }, []);
 
   // Handle the expansion of the project main content
   const [isExpanded, setIsExpanded] = useState(false);
@@ -19,27 +48,9 @@ function Project({ data }) {
     setIsExpanded(!isExpanded);
   };
 
-  // const [projectContainerHeight, setProjectContainerHeight] = useState(0);
-  // function generateSiderailTimelinePattern() {
-  //   const element = document.querySelector(".project-container");
-  //   const height = element.clientHeight;
-  //   const patternHeight = 20; // Set the height of each pattern segment
-
-  //   const patternCount = Math.ceil(height / patternHeight);
-
-  //   let pattern = "";
-  //   for (let i = 0; i < patternCount; i++) {
-  //     pattern.push("|", <br key={i} />);
-  //   }
-
-  //   return pattern;
-  // }
-
   return (
     <div className="project-container" id={`${data.id}-container`}>
-      <div className="project-container-siderails">
-        {/* <div className="pattern">{generateSiderailTimelinePattern()}</div> */}
-      </div>
+      <div className="project-container-siderails" />
       <div className="project-header-container">
         <div className="project-container-siderails">
           {formatDate(data.date)}
@@ -59,13 +70,9 @@ function Project({ data }) {
         </div>
       </div>
       <div className="project-container-center">
-        <div className="timeline-vline project-container-siderails">
-        </div>
+        <div className="timeline-vline project-container-siderails"></div>
         <div className="project-content-container">
-          <div className="cover-image-container">
-            <img className="cover-image" src={coverImage} alt={data.title} />
-          </div>
-          <br />
+          <img className="cover-image" src={coverImage} alt={data.title} />
           <div
             className={
               isExpanded
@@ -73,7 +80,7 @@ function Project({ data }) {
                 : "project-main-content"
             }
           >
-            {data.longDescription}
+            <ReactMarkdown>{mainContent}</ReactMarkdown>
           </div>
         </div>
         <div className="project-container-siderails"></div>

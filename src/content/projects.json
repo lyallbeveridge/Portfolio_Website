@@ -1,26 +1,9 @@
 [
   {
-    "id": "thesis",
-    "title": "Undergraduate Thesis Project",
+    "id": "southco-thesis",
+    "title": "Southco Undergraduate Thesis Project",
     "date": "29-04-2024",
-    "tags": ["Web Development", "React", "API"],
-    "description": "Device ",
-    "longDescription": "This is a more detailed description of the project, which can include the project's objectives, technologies used, challenges faced, and solutions implemented.",
-    "coverImage": "img_brembo_me_smiling.jpg",
-    "githubLink": "https://github.com/example/project1",
-    "liveDemo": "https://example.com/project1",
-    "achievements": ["Achievement 1", "Achievement 2"]
-  },
-  {
-    "id": "project2",
-    "title": "Project Title 2",
-    "date": "29-04-2022",
-    "tags": ["Data Analysis", "Python"],
-    "description": "Short description of the project.",
-    "longDescription": "This is a more detailed description of the project. It covers aspects such as the analytical methods employed, the data sources, and the insights derived from the analysis.",
-    "coverImage": "img_brembo_me_smiling.jpg",
-    "githubLink": "https://github.com/example/project2",
-    "liveDemo": "https://example.com/project2",
-    "achievements": ["Achievement 1", "Achievement 2"]
+    "description": "Service body vehicle door control unit",
+    "coverImage": "on-desk-in-stand.png"
   }
 ]

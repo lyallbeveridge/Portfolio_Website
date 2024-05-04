@@ -4,10 +4,10 @@ import "../styles/main.css";
 
 export default function SectionHeader({ children, containerDivId }) {
   return (
-    <>
+    <div id={containerDivId} className="section-header">
       <Divider />
-      <div id="containerDivId" className="section-header">{children}</div>
+      {children}
       <Divider />
-    </>
+    </div>
   );
 }
