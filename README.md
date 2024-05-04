@@ -25,15 +25,14 @@ A hacker zine style personal portfolio website for personal projects.
 - [ ] Images massive on zoom out
 
 # MVP TODO
-
 - [ ] Fix introductory text to be shorter, not mention my name twice and be engaging.
 - [ ] Fill in the projects (aim for 10)
 - [ ] Have a project text interpreter
 - [ ] Make engaging catch phrases
 - [ ] Put ASCII art in the skills section and fill that out (a grid would be nice)
-- [ ] favicon_icon
-- [ ] Add some sort of third section (showcase, qualifications)
-- [x] Fix timeline VLine toggle fade
+- [X] favicon_icon
+- [ ] Add some sort of third section (showcase, resume, qualifications)
+- [X] Fix timeline VLine toggle fade
 
 # Feature Ideas
 

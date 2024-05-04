@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import GlobeAnimation from "./GlobeAnimation";
 import ProfileAnimation from "./ProfileAnimation";
 import HardwareAnimation from "./HardwareAnimation";
+import ReactMarkdown from "react-markdown";
+import openingSectionContent from '../content/opening-section.md';
 
 function OpeningSection() {
+  const [text, setText] = useState('');
+
+  useEffect(() => {
+    fetch(openingSectionContent)
+      .then(response => response.text())
+      .then(data => {
+        setText(data);
+      });
+  }, []);
+
   return (
     <>
       {/* <GlobeAnimation/> */}
       <ProfileAnimation />
       <HardwareAnimation />
-      <pre>
-        {
-          "G'day! My name is Lyall Beveridge, and this is my digital portfolio. Here, you'll find a showcase of my engineering and computer science projects, each detailed with insights into my creative process and the technologies I use.\n\nThis website itself is not only a demonstration of my frontend web development skills but is also a testament to hackerzines, which were famous in the the early ???'s. [LINK]"
-        }
-      </pre>
+      <ReactMarkdown>{text}</ReactMarkdown>
     </>
   );
 }
