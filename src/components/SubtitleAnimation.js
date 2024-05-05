@@ -3,12 +3,10 @@ import "../styles/subtitleAnimation.css";
 
 export default function SubtitleAnimation() {
   const subtitleTextOptions = [
-    "bEng (Mechatronic) (UNSW)",
-    "bSci (Computer Science) (UNSW)",
-    "Full stack developer",
+    "Sick cunt",
     "Software engineer",
     "Hardware enthusiast",
-    "Open source contributor",
+    "Full stack developer",
   ];
   const [subtitlePhraseIndex, setSubtitlePhraseIndex] = useState(0);
   const [subtitleText, setSubtitleText] = useState(subtitleTextOptions[subtitlePhraseIndex]);

@@ -1,77 +1,89 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { AsciiEffect } from "three/examples/jsm/effects/AsciiEffect.js";
+import { TrackballControls } from "three/addons/controls/TrackballControls.js";
 
 import headModel from "../assets/SmilingHead.stl";
 
 export default function ProfileAnimation() {
-  const canvasRef = useRef(null);
+  const divRef = useRef(null);
+  const [sizes, setSizes] = useState({ width: 200, height: 200 });
 
-  let camera, scene, renderer, effect;
+  let camera, scene, renderer, effect, controls, loader;
 
-  let sphere, plane;
+  const headMesh = new THREE.Mesh();
 
   const start = Date.now();
 
-  const sizes = {
-    width: 400,
-    height: 400,
-  };
-
   function init() {
-
-    camera = new THREE.PerspectiveCamera( 70, sizes.width / sizes.height, 1, 1000 );
-    camera.position.y = 150;
-    camera.position.z = 500;
+    camera = new THREE.PerspectiveCamera(
+      70,
+      sizes.width / sizes.height,
+      1,
+      1000
+    );
+    camera.position.set(0, 0, 400);
 
     scene = new THREE.Scene();
-    scene.background = new THREE.Color( 0, 0, 0 );
+    scene.background = new THREE.Color(0, 0, 0);
 
-    const pointLight1 = new THREE.PointLight( 0xffffff, 3, 0, 0 );
-    pointLight1.position.set( 500, 500, 500 );
-    scene.add( pointLight1 );
+    const pointLight1 = new THREE.PointLight(0xffffff, 1, 0, 0);
+    pointLight1.position.set(200, 300, 800);
+    scene.add(pointLight1);
 
-    const pointLight2 = new THREE.PointLight( 0xffffff, 1, 0, 0 );
-    pointLight2.position.set( - 500, - 500, - 500 );
-    scene.add( pointLight2 );
+    const pointLight2 = new THREE.PointLight(0xffffff, 1, 0, 0);
+    pointLight2.position.set(100, 0, -500);
+    scene.add(pointLight2);
 
-    sphere = new THREE.Mesh( new THREE.SphereGeometry( 200, 20, 10 ), new THREE.MeshPhongMaterial( { flatShading: true } ) );
-    scene.add( sphere );
+    const pointLight3 = new THREE.PointLight(0xffffff, 1, 0, 0);
+    pointLight3.position.set(-200, 0, -200);
+    scene.add(pointLight3);
 
-    // Plane
+    // Load STL model
+    loader = new STLLoader();
+    loader.load(headModel, function (geometry) {
+      headMesh.geometry = geometry;
+      headMesh.material = new THREE.MeshPhongMaterial({ flatShading: true });
 
-    plane = new THREE.Mesh( new THREE.PlaneGeometry( 400, 400 ), new THREE.MeshBasicMaterial( { color: 0xe0e0e0 } ) );
-    plane.position.y = - 200;
-    plane.rotation.x = - Math.PI / 2;
-    scene.add( plane );
+      headMesh.geometry.center();
+      headMesh.rotation.set(-Math.PI / 2, 0, Math.PI);
+      headMesh.scale.set(20, 20, 20);
+
+      // Bounding box
+      headMesh.geometry.computeBoundingBox();
+      var bbox = headMesh.geometry.boundingBox;
+      console.log(bbox);
+
+      scene.add(headMesh);
+    });
 
     renderer = new THREE.WebGLRenderer();
-    renderer.setSize( sizes.width, sizes.height );
+    renderer.setSize(sizes.width * 4, sizes.height * 4);
 
-    effect = new AsciiEffect( renderer, ' .:-+*=%@#', { invert: true } );
-    effect.setSize( sizes.width, sizes.height );
-    effect.domElement.style.color = 'white';
-    effect.domElement.style.backgroundColor = 'transparent';
+    effect = new AsciiEffect(renderer, " .:-+*=%@#", { invert: true });
+    effect.setSize(sizes.width, sizes.height);
+    effect.domElement.style.color = "white";
+    effect.domElement.style.backgroundColor = "transparent";
 
-    // Special case: append effect.domElement, instead of renderer.domElement.
-    // AsciiEffect creates a custom domElement (a div container) where the ASCII elements are placed.
-    while (canvasRef.current.firstChild) {
-      canvasRef.current.removeChild(canvasRef.current.firstChild);
-    } 
-    canvasRef.current.appendChild( effect.domElement );
+    while (divRef.current.firstChild) {
+      divRef.current.removeChild(divRef.current.firstChild);
+    }
 
-    // controls = new TrackballControls( camera, effect.domElement );
+    divRef.current.appendChild(effect.domElement);
+
+    controls = new OrbitControls(camera, effect.domElement);
   }
 
   function render() {
     const timer = Date.now() - start;
 
-    sphere.position.y = Math.abs( Math.sin( timer * 0.002 ) ) * 150;
-    sphere.rotation.x = timer * 0.0003;
-    sphere.rotation.z = timer * 0.0002;
+    headMesh.rotateZ(0.01);
+
+    controls.update();
+
     effect.render(scene, camera);
   }
 
@@ -80,10 +92,24 @@ export default function ProfileAnimation() {
     render();
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    const parentDiv = document.getElementById("profile-animation-canvas");
+    if (parentDiv) {
+      console.log(parentDiv.offsetWidth);
+      console.log(parentDiv.offsetHeight);
+      setSizes({
+        width: parentDiv.offsetWidth,
+        height: parentDiv.offsetHeight,
+      });
+    }
+
     init();
+    console.log(camera);
+    console.log(scene);
+    console.log(headMesh);
+
     animate();
   }, []);
 
-  return <div ref={canvasRef} />;
+  return <div id="profile-animation-canvas" ref={divRef} />;
 }

@@ -5,20 +5,22 @@ import HardwareAnimation from "./HardwareAnimation";
 import ReactMarkdown from "react-markdown";
 
 function OpeningSection() {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
 
   useEffect(() => {
-    fetch('/Portfolio_Website/content/opening-section.md')
-    .then(response => {
-      if (!response.ok) { throw response }
-      return response.text()
-    })
-    .then(data => {
-      setText(data);
-    })
-    .catch(err => {
-      console.log('Fetch Error: ', err);
-    });
+    fetch("/Portfolio_Website/content/opening-section.md")
+      .then((response) => {
+        if (!response.ok) {
+          throw response;
+        }
+        return response.text();
+      })
+      .then((data) => {
+        setText(data);
+      })
+      .catch((err) => {
+        console.log("Fetch Error: ", err);
+      });
   }, []);
 
   return (

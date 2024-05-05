@@ -28,12 +28,14 @@ function Main() {
     <div id="main-container">
       {/* <br /> */}
       {/* <button onClick={toggleLightMode}>Toggle theme</button> */}
+      {/* <div id="cover-page"> */}
       <SectionHeader containerDivId="title-section-header">
         <TitleSection />
       </SectionHeader>
       <SectionContent containerDivId="opening-section">
         <OpeningSection />
       </SectionContent>
+      {/* </div> */}
 
       <SectionHeader containerDivId="skills">
           <h1>Skills</h1>
