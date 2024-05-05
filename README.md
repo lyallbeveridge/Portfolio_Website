@@ -4,6 +4,7 @@ A hacker zine style personal portfolio website for personal projects.
 
 ## Content
 
+
 ### Projects to List
 - Thesis
 - Remote control
@@ -36,7 +37,8 @@ https://fwachter.github.io/
 
 https://brittanychiang.com/
 - Pinpoint lighting in the background
-- Resume w/ tags and view full resume 
+- Resume w/ tags and view full resume
+- Folding headers, no nav bar
 
 ## Development
 
@@ -50,6 +52,9 @@ https://brittanychiang.com/
 
 ### MVP TODO
 - [ ] Fill in the projects (aim for 10)
+- [ ] Put the read-more button on the bottom somehow and let the thing expand the full way to the right
+- [ ] Change to a softer colour theme
+- [ ] Decide whether to do work projects?
 - [ ] Have a project text interpreter
 - [ ] Make engaging catch phrases
 - [ ] Put ASCII art in the skills section and fill that out (a grid would be nice)

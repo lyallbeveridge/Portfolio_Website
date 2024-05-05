@@ -2,30 +2,31 @@ import React, { useEffect, useState } from "react";
 import "../styles/project.css";
 import { formatDate } from "../utils/helpers";
 import ReactMarkdown from "react-markdown";
-import openingSectionContent from "../content/opening-section.md";
 
 function Project({ data }) {
   // Dynamically import the cover image
   // const coverImage = require(`../images/${data.coverImage}`);
-  const coverImage = require(`C:\\Users\\lyall\\Documents\\Portfolio_Website\\src\\content\\images\\on-desk-in-stand.png`);
+  // const coverImage = require(`C:\\Users\\lyall\\Documents\\Portfolio_Website\\src\\content\\images\\on-desk-in-stand.png`);
   // const mainContentMarkdown = requi  re(`/Portfolio_Website/content/${data.id}.md`);
 
   // Cover image
 
   // Convert the main project content from markdown
+  const [coverImage, setCoverImage] = useState("");
   const [mainContent, setMainContent] = useState("");
   useEffect(() => {
     // Cover image (which is a static png file)
-    // fetch(`/Portfolio_Website/content/images/${data.coverImage}`)
-    //   .then((response) => response.blob())
-    //   .then((blob) => {
-    //     const url = URL.createObjectURL(blob);
-    //     const img = new Image();
-    //     img.src = url;
-    //     img.onload = () => {
-    //       URL.revokeObjectURL(url);
-    //     };
-    //   });
+    fetch(`/Portfolio_Website/content/images/${data.coverImage}`)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = URL.createObjectURL(blob);
+        const img = new Image();
+        img.src = url;
+        img.onload = () => {
+          URL.revokeObjectURL(url);
+        };
+        setCoverImage(url);
+      });
 
     // Main content
     fetch(`/Portfolio_Website/content/${data.id}.md`)

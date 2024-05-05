@@ -26,9 +26,8 @@ function Main() {
 
   return (
     <div id="main-container">
-      <div style={{position: "sticky", top: 0, zIndex: 100}}>header</div>
-      <br />
-      <button onClick={toggleLightMode}>Toggle theme</button>
+      {/* <br /> */}
+      {/* <button onClick={toggleLightMode}>Toggle theme</button> */}
       <SectionHeader containerDivId="title-section-header">
         <TitleSection />
       </SectionHeader>
