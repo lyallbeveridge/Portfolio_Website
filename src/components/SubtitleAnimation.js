@@ -3,10 +3,10 @@ import "../styles/subtitleAnimation.css";
 
 export default function SubtitleAnimation() {
   const subtitleTextOptions = [
-    "Sick cunt",
     "Software engineer",
     "Hardware enthusiast",
     "Full stack developer",
+    "TempleOS Enthusiast",
   ];
   const [subtitlePhraseIndex, setSubtitlePhraseIndex] = useState(0);
   const [subtitleText, setSubtitleText] = useState(subtitleTextOptions[subtitlePhraseIndex]);

@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div>Designed and built by Lyall Beveridge</div>
-      <div>© 2021 All Rights Reserved</div>
+      <div>© 2024 All Rights Reserved</div>
     </div>
   );
 }
