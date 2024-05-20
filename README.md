@@ -102,6 +102,7 @@ https://brittanychiang.com/
 
 This is hard to work with for some reason.
 `> npm run deploy`
-`> git add .`
-`> ...`
-`> git push?`
+This just automatically pushes it to the repo but there is a bug:
+- Reset the custom domain in the page settings to `www.lyallbeveridge.com`
+- Re-enforce HTTPS
+

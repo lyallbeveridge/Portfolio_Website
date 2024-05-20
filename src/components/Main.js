@@ -3,6 +3,7 @@ import "../styles/main.css";
 import OpeningSection from "./OpeningSection";
 import Divider from "./Divider";
 import ProjectTimeline from "./ProjectTimeline";
+import ExperienceTimeline from "./ExperienceTimeline";
 import Footer from "./Footer";
 import TitleSection from "./TitleSection";
 import SectionHeader from "./SectionHeader";
@@ -37,6 +38,21 @@ function Main() {
       </SectionContent>
       {/* </div> */}
 
+
+      <SectionHeader containerDivId="experience">
+          <h1>Experience</h1>
+      </SectionHeader>
+      <SectionContent containerDivId="experience-section">
+        <ExperienceTimeline />
+      </SectionContent>
+
+      <SectionHeader containerDivId="projects">
+          <h1>Projects</h1>
+      </SectionHeader>
+      <SectionContent containerDivId="project-section">
+        <ProjectTimeline />
+      </SectionContent>
+
       <SectionHeader containerDivId="skills">
           <h1>Skills</h1>
       </SectionHeader>
@@ -51,13 +67,6 @@ function Main() {
             <li>MongoDB</li>
           </ul>
         </div>
-      </SectionContent>
-
-      <SectionHeader containerDivId="projects">
-          <h1>Projects</h1>
-      </SectionHeader>
-      <SectionContent containerDivId="project-section">
-        <ProjectTimeline />
       </SectionContent>
 
       <Divider />

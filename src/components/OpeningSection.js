@@ -8,7 +8,7 @@ function OpeningSection() {
   const [text, setText] = useState("");
 
   useEffect(() => {
-    fetch("/Portfolio_Website/content/opening-section.md")
+    fetch("/content/opening-section.md")
       .then((response) => {
         if (!response.ok) {
           throw response;

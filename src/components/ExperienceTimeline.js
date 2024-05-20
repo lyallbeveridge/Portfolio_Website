@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Project from "./Project";
+import Experience from "./Experience";
 import "../styles/projectTimeline.css";
 
-const ProjectTimeline = () => {
+const ExperienceTimeline = () => {
   const [projectsData, setProjectsData] = useState([]);
 
   // Fetch the project data
   useEffect(() => {
-    fetch("/content/projects.json")
+    fetch("/content/experiences.json")
       .then((response) => response.json())
       .then((data) => {
         setProjectsData(data);
@@ -17,7 +17,7 @@ const ProjectTimeline = () => {
   return (
     <>
       {projectsData.map((projectJSON) => (
-        <Project data={projectJSON} key={projectJSON.id} />
+        <Experience data={projectJSON} key={projectJSON.id} />
       ))}
       <div className="project-timeline-footer">
         <div
@@ -31,4 +31,4 @@ const ProjectTimeline = () => {
   );
 };
 
-export default ProjectTimeline;
+export default ExperienceTimeline;

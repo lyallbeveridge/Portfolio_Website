@@ -55,7 +55,6 @@ export default function ProfileAnimation() {
       // Bounding box
       headMesh.geometry.computeBoundingBox();
       var bbox = headMesh.geometry.boundingBox;
-      console.log(bbox);
 
       scene.add(headMesh);
     });
@@ -95,8 +94,6 @@ export default function ProfileAnimation() {
   useLayoutEffect(() => {
     const parentDiv = document.getElementById("profile-animation-canvas");
     if (parentDiv) {
-      console.log(parentDiv.offsetWidth);
-      console.log(parentDiv.offsetHeight);
       setSizes({
         width: parentDiv.offsetWidth,
         height: parentDiv.offsetHeight,
@@ -104,9 +101,6 @@ export default function ProfileAnimation() {
     }
 
     init();
-    console.log(camera);
-    console.log(scene);
-    console.log(headMesh);
 
     animate();
   }, []);

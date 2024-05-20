@@ -16,7 +16,7 @@ function Project({ data }) {
   const [mainContent, setMainContent] = useState("");
   useEffect(() => {
     // Cover image (which is a static png file)
-    fetch(`/Portfolio_Website/content/images/${data.coverImage}`)
+    fetch(`/content/images/${data.coverImage}`)
       .then((response) => response.blob())
       .then((blob) => {
         const url = URL.createObjectURL(blob);
@@ -29,7 +29,7 @@ function Project({ data }) {
       });
 
     // Main content
-    fetch(`/Portfolio_Website/content/${data.id}.md`)
+    fetch(`/content/${data.id}.md`)
       .then((response) => response.text())
       .then((data) => {
         setMainContent(data);
