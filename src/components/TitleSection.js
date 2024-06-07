@@ -1,28 +1,44 @@
 import React from "react";
 import TitleASCII from "./TitleASCII";
-import IconLinkTray from "./IconLinkTray";
 import "../styles/titleSection.css";
+import IconLinkTray from "./IconLinkTray";
 import SubtitleAnimation from "./SubtitleAnimation";
+import ProfileAnimation from "./ProfileAnimation";
+
 
 export default function TitleSection() {
   return (
-    <>
+    <div id="title-section">
+      <ProfileAnimation />
       <TitleASCII />
       <SubtitleAnimation />
-      <div id="contents-links">
-        <ul>
+      <div id="contents-links-container">
+        <ul id="contents-links-ul">
           <li>
             {" "}
             <a
-              href="#skills"
+              href="#about"
               onClick={(event) => {
                 event.preventDefault();
                 document
-                  .querySelector("#skills")
+                  .querySelector("#about")
                   .scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Skills
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#experience"
+              onClick={(event) => {
+                event.preventDefault();
+                document
+                  .querySelector("#experience")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Experience
             </a>
           </li>
           <li>
@@ -41,6 +57,6 @@ export default function TitleSection() {
         </ul>
       </div>
       <IconLinkTray />
-    </>
+    </div>
   );
 }

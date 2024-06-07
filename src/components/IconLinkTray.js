@@ -1,11 +1,10 @@
 import React from "react";
-import "../styles/iconLinkTray.css";
 
 export default function IconLinkTray() {
     return (
         <div id="icon-button-div">
         <div className="icon-btn">
-          <a
+          <a className="icon-a"
             href="https://www.linkedin.com/in/lyall-beveridge"
             target="_blank"
             rel="noopener noreferrer"
@@ -22,7 +21,7 @@ export default function IconLinkTray() {
           </a>
         </div>
         <div className="icon-btn">
-        <a
+        <a className="icon-a"
           href="https://github.com/lyallbeveridge"
           target="_blank"
           rel="noopener noreferrer"
@@ -39,7 +38,7 @@ export default function IconLinkTray() {
         </a>
         </div>
         <div className="icon-btn">
-        <a href="mailto:lyall.beveridge@gmail.com">
+        <a className="icon-a" href="mailto:lyall.beveridge@gmail.com">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
