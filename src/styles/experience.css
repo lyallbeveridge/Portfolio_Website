@@ -20,6 +20,14 @@
   font-family: "Roboto Mono";
 }
 
+.experience-siderail-date {
+    min-height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .experience-header-container {
   width: 100%;
   display: flex;
@@ -29,6 +37,7 @@
   width: 68px;
   height: 68px;
   margin-right: 1em;
+  border-radius: 2px;
 }
 
 .experience-title-subtitle-container {

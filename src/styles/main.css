@@ -59,12 +59,13 @@
 }
 
 .section-content-siderail {
-  width: 80px;
-  min-width: 80px;
+  width: var(--siderail-width);
+  min-width: var(--siderail-width);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  opacity: 0.5;
 }
 
 .siderail-vline-dotted {
@@ -89,7 +90,6 @@
 .siderail-vline-terminator {
   font-size: 28px;
   line-height: 0.7;
-  width: var(--siderail-width);
   text-align: center;
 }
 

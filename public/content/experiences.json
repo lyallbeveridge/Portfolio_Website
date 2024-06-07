@@ -16,7 +16,7 @@
     "endDate": "29-04-2024",
     "startDate": "29-04-2024",
     "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
-    "coverImage": "iviis-logo.jpg",
+    "logoImage": "iviis-logo.jpg",
     "skills": ["VB.NET", "SQL", "Javascript"]
 },
 {
@@ -26,7 +26,7 @@
     "endDate": "29-04-2024",
     "startDate": "29-04-2024",
     "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
-    "coverImage": "iviis-logo.jpg",
+    "logoImage": "marathon-targets-logo.jpg",
     "skills": ["VB.NET", "SQL", "Javascript"]
 },
 {
@@ -36,7 +36,7 @@
     "endDate": "29-04-2024",
     "startDate": "29-04-2024",
     "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
-    "coverImage": "iviis-logo.jpg",
+    "logoImage": "schneider-company-logo.jpg",
     "skills": ["VB.NET", "SQL", "Javascript"]
 }
 ]

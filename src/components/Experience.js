@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "../styles/experience.css";
 import { formatDate } from "../utils/helpers";
-import logoImage from "../content/images/vidi-astra-logo.jpg";
 
 function Experience({ data }) {
-  console.log(data);
+  const [logoImage, setLogoImage] = useState("");
+
+  // Get the image
+  useEffect(() => {
+    import(`../content/images/${data.logoImage}`).then((image) => {
+      setLogoImage(image.default);
+    });
+  }, [data.logoImage]);
+
   return (
     <>
       <div
@@ -40,7 +47,7 @@ function Experience({ data }) {
           </div>
         </div>
       </div>
-      <div className="siderail-vline-dotted" />
+      <div className="siderail-vline-dotted section-content-siderail" />
     </>
   );
 }

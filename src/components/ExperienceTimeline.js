@@ -22,7 +22,7 @@ const ExperienceTimeline = () => {
 
       {/* Footer */}
         <div
-          className="siderail-vline-terminator"
+          className="siderail-vline-terminator section-content-siderail"
         >
           *
         </div>
