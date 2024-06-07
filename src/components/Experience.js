@@ -1,50 +1,47 @@
 import React, { useEffect, useState } from "react";
-import "../styles/project.css";
+import "../styles/experience.css";
 import { formatDate } from "../utils/helpers";
-import ReactMarkdown from "react-markdown";
+import logoImage from "../content/images/vidi-astra-logo.jpg";
 
 function Experience({ data }) {
-
-  // Convert the main content from markdown
-  const [mainContent, setMainContent] = useState("");
-  useEffect(() => {
-
-    // Main content
-    fetch(`/content/${data.id}.md`)
-      .then((response) => response.text())
-      .then((data) => {
-        setMainContent(data);
-      });
-  }, []);
-
+  console.log(data);
   return (
-    <div className="project-container" id={`${data.id}-container`}>
-      <div className="project-container-siderails" />
-      <div className="project-header-container">
-        <div className="project-container-siderails">
-          {formatDate(data.date)}
+    <>
+      <div
+        className="experience-container"
+        id={`${data.id}-experience-container`}
+      >
+        <div className="experience-siderail section-content-siderail">
+          <div className="experience-siderail-date">
+            {formatDate(data.endDate)}
+          </div>
+          <div className="siderail-vline-bold"/>
+          <div className="experience-siderail-date">
+            {formatDate(data.startDate)}
+          </div>
         </div>
-        <div className="project-title-subtitle-container">
-          <div className="project-title-container">
-            <div>
-              <h3>{data.title}</h3>
+        <div className="experience-main-content-container">
+          <div className="experience-header-container">
+            <img className="experience-logo-image" src={logoImage} />
+            <div className="experience-title-subtitle-container">
+              <div className="experience-title-container">
+                <h2>{data.position}</h2>
+              </div>
+              <div className="experience-subtitle">{data.company}</div>
             </div>
           </div>
-          <p className="project-subtitle">{data.description}</p>
-        </div>
-      </div>
-      <div className="project-container-center">
-        <div className="timeline-vline project-container-siderails"></div>
-        <div className="project-content-container">
-          <div
-            className={"project-main-content"}
-          >
-            <ReactMarkdown>{mainContent}</ReactMarkdown>
+          <div className="experience-description">{data.description}</div>
+          <div className="skills-tags">
+            {data.skills.map((skill) => (
+              <div className="skill-tag" key={skill}>
+                {skill}
+              </div>
+            ))}
           </div>
         </div>
-        <div className="project-container-siderails"></div>
       </div>
-    </div>
+      <div className="siderail-vline-dotted" />
+    </>
   );
 }
 

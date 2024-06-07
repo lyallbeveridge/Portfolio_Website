@@ -4,8 +4,9 @@
   align-items: center;
   justify-content: flex-start;
   max-width: var(--max-body-width);
+  height: 100%;
   width: 100%;
-  width: calc(100% - 1em);
+  /* width: calc(100% - 1em); */
   box-sizing: border-box;
   overflow-x: hidden;
   font-size: 13px;
@@ -17,6 +18,7 @@
   color: var(--font-color-light);
 }
 
+/* Sections */
 .section-header {
   display: flex;
   flex-direction: column;
@@ -24,12 +26,26 @@
   justify-content: center;
 }
 
+.section-header h1 {
+  font-size: 2.2em;
+  margin: 0;
+  font-family: "Roboto Mono";
+}
+
 .section-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  margin: 0 1em;
+  margin: 3em 0;
+  line-height: 1.6;
+}
+
+.section-content h2 {
+  /* font-size: 2.2em; */
+  margin: 0;
+  font-family: "Roboto Mono";
 }
 
 .section-content pre {
@@ -38,33 +54,59 @@
   line-height: 1.5em;
 }
 
-.section-content img{
+.section-content img {
   max-width: 100%;
 }
 
-.project-main-content img {
-  max-height: 10em;
-  margin: 0 2em;
+.section-content-siderail {
+  width: 80px;
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#cover-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: inherit;
+.siderail-vline-dotted {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ctext x='10' y='15' text-anchor='middle' font-size='16px' fill='%23FFFFFF' font-family='monospace'%3E|%3C/text%3E%3C/svg%3E");
+  background-repeat: repeat-y;
+  background-position: center;
 }
 
-#opening-section {
-    flex-grow: 1;
+.siderail-vline-dotted.light-mode {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ctext x='10' y='15' text-anchor='middle' font-size='16px' fill='%23000000' font-family='monospace'%3E|%3C/text%3E%3C/svg%3E");
 }
 
-#profile-animation-canvas {
-    height: 30vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
+.siderail-vline-bold {
+  width: 4px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  border-radius: 2px;
+}
+
+.siderail-vline-terminator {
+  font-size: 28px;
+  line-height: 0.7;
+  width: var(--siderail-width);
+  text-align: center;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  font-family: "Roboto Mono";
+  font-size: 10px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 0 8px;
 }

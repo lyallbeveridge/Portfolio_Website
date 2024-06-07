@@ -71,7 +71,7 @@ function Project({ data }) {
         </div>
       </div>
       <div className="project-container-center">
-        <div className="timeline-vline project-container-siderails"></div>
+        <div className="siderail-vline-dotted project-container-siderails"></div>
         <div className="project-content-container">
           <img className="cover-image" src={coverImage} alt={data.title} />
           <div

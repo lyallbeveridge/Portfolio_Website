@@ -18,7 +18,18 @@
     align-items: center;
     justify-content: center;
     gap: 1em;
+    font-family: 'Roboto Mono';
 }
+
+/* ASCII Head Animation */
+#profile-animation-canvas {
+    height: 33vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
 
 /* Contents and nav links */
 #contents-links-container {
@@ -74,10 +85,6 @@
 }
 
 /* Icon button links */
-:root {
-  --icon-fill-light: black;
-  --icon-fill-dark: whitesmoke;
-}
 
 #icon-button-div {
   display: flex;

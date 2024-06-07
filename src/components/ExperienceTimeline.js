@@ -19,14 +19,13 @@ const ExperienceTimeline = () => {
       {projectsData.map((projectJSON) => (
         <Experience data={projectJSON} key={projectJSON.id} />
       ))}
-      <div className="project-timeline-footer">
+
+      {/* Footer */}
         <div
-          className="project-container-siderails"
-          style={{ fontSize: "28px" }}
+          className="siderail-vline-terminator"
         >
           *
         </div>
-      </div>
     </>
   );
 };

@@ -1,9 +1,42 @@
 [
   {
     "id": "vidi-astra",
-    "title": "Vidi Astra",
-    "date": "29-04-2024",
-    "description": "Service body vehicle door control unit",
-    "coverImage": "on-desk-in-stand.png"
-  }
+    "position": "Electronics Engineer",
+    "company": "Vidi Astra",
+    "endDate": "29-04-2024",
+    "startDate": "29-04-2024",
+    "description": "Developed, tested, and integrated early prototype readout electronics for a spaceborne LiDAR cubesat at Vidi Astra, showcasing proficiency in complex systems engineering tasks.",
+    "logoImage": "vidi-astra-logo.jpg",
+    "skills": ["Embedded Systems", "PCB Design", "C++", "Python", "Altium Designer", "KiCad"]
+},
+{
+    "id": "iviis",
+    "position": "Junior Developer",
+    "company": "iViis",
+    "endDate": "29-04-2024",
+    "startDate": "29-04-2024",
+    "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
+    "coverImage": "iviis-logo.jpg",
+    "skills": ["VB.NET", "SQL", "Javascript"]
+},
+{
+    "id": "marathon",
+    "position": "Junior Engineer",
+    "company": "Marathon Targets",
+    "endDate": "29-04-2024",
+    "startDate": "29-04-2024",
+    "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
+    "coverImage": "iviis-logo.jpg",
+    "skills": ["VB.NET", "SQL", "Javascript"]
+},
+{
+    "id": "schneider",
+    "position": "Engineering Intern",
+    "company": "Schneider & Company",
+    "endDate": "29-04-2024",
+    "startDate": "29-04-2024",
+    "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
+    "coverImage": "iviis-logo.jpg",
+    "skills": ["VB.NET", "SQL", "Javascript"]
+}
 ]

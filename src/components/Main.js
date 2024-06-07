@@ -15,7 +15,7 @@ function Main() {
     document.querySelectorAll("button").forEach((element) => {
       element.classList.toggle("light-mode");
     });
-    document.querySelectorAll(".timeline-vline").forEach((element) => {
+    document.querySelectorAll(".siderail-vline-dotted").forEach((element) => {
       element.classList.toggle("light-mode");
     });
     document.getElementById("main-container").classList.toggle("light-mode");
@@ -28,7 +28,6 @@ function Main() {
     <div id="main-container">
       {/* <br /> */}
       {/* <button onClick={toggleLightMode}>Toggle theme</button> */}
-      {/* <div id="cover-page"> */}
 
       {/*Title section */}
       <TitleSection />
