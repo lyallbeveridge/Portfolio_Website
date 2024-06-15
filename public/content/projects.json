@@ -1,8 +1,15 @@
 [
   {
     "id": "southco-thesis",
-    "title": "Southco Undergraduate Thesis Project",
-    "date": "29-04-2024",
-    "description": "Service body vehicle door control unit"
+    "title": "Undergraduate Thesis",
+    "subtitle": "Service body vehicle door control unit",
+    "description": "Developed in collaboration with Southco, this project involved designing and prototyping an electronic Door Control Unit (DCU) for service body vehicles. The product integrates Southco latches with almost any vehicle's central locking system, enhancing security and reducing operational inefficiencies. The final prototype met core requirements, including latch control and operator warning mechanisms, and is currently being developed for Australian consumers, with distribution already secured.",
+    "links": [
+      {     
+        "text": "Report",
+        "url": "https://www.google.com/"
+      }
+    ],
+    "skills": ["Embedded Systems", "PCB Design", "Fusion 360", "C", "Altium Designer", "Automotive Electronics", "LTSpice"]
   }
 ]

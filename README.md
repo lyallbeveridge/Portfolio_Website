@@ -43,19 +43,22 @@ https://brittanychiang.com/
 ## Development
 
 ### Bugs
-- [ ] Make the text to Inter
-- [ ] Change the hover icons to just be brightness fade rather than expand
+- [ ] Make the text Inter
+- [x] Change the hover icons to just be brightness fade rather than expand
 - [ ] Delay before project section disappears
 - [ ] Google pixel stretched ascii ART (space shrinking)
 - [ ] Messenger preview stretched ascii ART
 - [ ] Images massive on zoom out
 - [ ] Image captions
 - [ ] Fix install app suggestion
+- [ ] Loading animation screen (1 animation cycle minimum and then wait for the head to load)
 - [X] Scroll shows full header section
 
 ### MVP TODO
+- [ ] Get the static document link working for the report PDF
 - [ ] Fill in the projects (aim for 10)
-- [ ] Put the read-more button on the bottom somehow and let the thing expand the full way to the right
+- [ ] Add Schneider and Company
+- [ ] somehow and let the thing expand the full way to the right
 - [ ] Change to a softer colour theme
 - [ ] Decide whether to do work projects?
 - [ ] Have a project text interpreter
@@ -70,8 +73,9 @@ https://brittanychiang.com/
 
 
 ### Feature Ideas
+- [ ] Sticky header with home button
 - [ ] More readable main font
-- [ ] Scale whitespace to make a coverpage of for the entry point
+- [x] Scale whitespace to make a coverpage of for the entry point
 - [ ] Highlight project button and ranking on scroll focus
 - [ ] Sticky header with navigation and toggle theme button: fade after scrolling past the last section of contents (?)
 - [ ] Window terminal emulator style, previous commands, help with other features

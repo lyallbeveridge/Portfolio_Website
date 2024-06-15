@@ -1,12 +1,10 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader.js";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { AsciiEffect } from "three/examples/jsm/effects/AsciiEffect.js";
-import { TrackballControls } from "three/addons/controls/TrackballControls.js";
 
-import headModel from "../assets/SmilingHead.stl";
+import headModel from "../content/stl/SmilingHead.stl";
 
 export default function ProfileAnimation() {
   const divRef = useRef(null);

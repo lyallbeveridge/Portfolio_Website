@@ -2,7 +2,7 @@
   {
     "id": "southco-thesis",
     "title": "Southco Undergraduate Thesis Project",
-    "date": "29-04-2024",
-    "description": "Service body vehicle door control unit"
+    "description": "Service body vehicle door control unit",
+    "skills": ["VB.NET", "SQL", "Javascript", "HTML & CSS", "Bootstrap 5", "Machine Learning"]
   }
 ]

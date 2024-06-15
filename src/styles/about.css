@@ -4,4 +4,5 @@
   margin: 1em 0;
   width: 75%;
   align-items: center;
+  color: var(--font-color-subdued);
 }

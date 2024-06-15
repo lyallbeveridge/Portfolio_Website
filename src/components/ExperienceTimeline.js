@@ -3,29 +3,27 @@ import Experience from "./Experience";
 import "../styles/projectTimeline.css";
 
 const ExperienceTimeline = () => {
-  const [projectsData, setProjectsData] = useState([]);
+  const [experienceData, setExperiencesData] = useState([]);
 
   // Fetch the project data
   useEffect(() => {
     fetch("/content/experiences.json")
       .then((response) => response.json())
       .then((data) => {
-        setProjectsData(data);
+        setExperiencesData(data);
       });
   }, []);
 
   return (
     <>
-      {projectsData.map((projectJSON) => (
+      {experienceData.map((projectJSON) => (
         <Experience data={projectJSON} key={projectJSON.id} />
       ))}
 
       {/* Footer */}
-        <div
-          className="siderail-vline-terminator section-content-siderail"
-        >
-          *
-        </div>
+      <div className="siderail-vline-terminator section-content-siderail">
+        *
+      </div>
     </>
   );
 };

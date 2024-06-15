@@ -7,7 +7,7 @@ function Experience({ data }) {
 
   // Get the image
   useEffect(() => {
-    import(`../content/images/${data.logoImage}`).then((image) => {
+    import(`../content/images/logos/${data.logoImage}`).then((image) => {
       setLogoImage(image.default);
     });
   }, [data.logoImage]);
@@ -37,7 +37,7 @@ function Experience({ data }) {
               <div className="experience-subtitle">{data.company}</div>
             </div>
           </div>
-          <div className="experience-description">{data.description}</div>
+          <div className="experience-description subdued-font">{data.description}</div>
           <div className="skills-tags">
             {data.skills.map((skill) => (
               <div className="skill-tag" key={skill}>
