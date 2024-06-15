@@ -43,11 +43,14 @@ https://brittanychiang.com/
 ## Development
 
 ### Bugs
+- [ ] Make the text to Inter
+- [ ] Change the hover icons to just be brightness fade rather than expand
 - [ ] Delay before project section disappears
 - [ ] Google pixel stretched ascii ART (space shrinking)
 - [ ] Messenger preview stretched ascii ART
 - [ ] Images massive on zoom out
 - [ ] Image captions
+- [ ] Fix install app suggestion
 - [X] Scroll shows full header section
 
 ### MVP TODO

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/titleASCII.css';
+import '../styles/titleSection.css';
 
 export default function TitleASCII() {
     return (

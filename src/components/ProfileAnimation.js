@@ -10,7 +10,7 @@ import headModel from "../assets/SmilingHead.stl";
 
 export default function ProfileAnimation() {
   const divRef = useRef(null);
-  const [sizes, setSizes] = useState({ width: 200, height: 200 });
+  const [sizes, setSizes] = useState({ width: 400, height: 400 });
 
   let camera, scene, renderer, effect, controls, loader;
 

@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import GlobeAnimation from "./GlobeAnimation";
-import ProfileAnimation from "./ProfileAnimation";
-import HardwareAnimation from "./HardwareAnimation";
+import "../styles/about.css";
 import ReactMarkdown from "react-markdown";
 
-function OpeningSection() {
+function AboutSection() {
   const [text, setText] = useState("");
 
   useEffect(() => {
@@ -25,12 +23,9 @@ function OpeningSection() {
 
   return (
     <>
-      {/* <GlobeAnimation/> */}
-      <ProfileAnimation />
-      {/* <HardwareAnimation /> */}
       <ReactMarkdown>{text}</ReactMarkdown>
     </>
   );
 }
 
-export default OpeningSection;
+export default AboutSection;
