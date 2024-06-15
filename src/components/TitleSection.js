@@ -13,7 +13,7 @@ export default function TitleSection() {
       </div>
       <div className="title-third" id="title-center-third">
         <TitleASCII />
-        <SubtitleAnimation />
+        {/* <SubtitleAnimation /> */}
         <div id="contents-links-container">
           <ul id="contents-links-ul">
             <li>

@@ -3,40 +3,44 @@
     "id": "vidi-astra",
     "position": "Electronics Engineer",
     "company": "Vidi Astra",
-    "endDate": "29-04-2024",
+    "endDate": "PRESENT",
     "startDate": "29-04-2024",
-    "description": "Developed, tested, and integrated early prototype readout electronics for a spaceborne LiDAR cubesat at Vidi Astra, showcasing proficiency in complex systems engineering tasks.",
+    "description": "Developed, tested, and integrated early prototype readout electronics for a spaceborne LiDAR 6U CubeSat. Assisted in the design and manufacture of the Spiral Blue Space Edge One computer V1.8 iteration. Implemented software and provided technical support for the University of Sydney's Waratah Seed, Toliman and ISAM missions as well as the federal government's Ghost Nets initiative.",
     "logoImage": "vidi-astra-logo.jpg",
-    "skills": ["Embedded Systems", "PCB Design", "C++", "Python", "Altium Designer", "KiCad"]
+    "website": "https://www.vidiastra.com/",
+    "skills": ["Embedded Systems", "PCB Design", "C & C++", "Python", "Altium Designer", "Computer Vision", "KiCad", "LiDAR"]
 },
 {
     "id": "iviis",
     "position": "Junior Developer",
     "company": "iViis",
-    "endDate": "29-04-2024",
-    "startDate": "29-04-2024",
-    "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
+    "endDate": "01-04-2024",
+    "startDate": "29-01-2023",
+    "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing. Developed and tested an internal AI chatbot designed to securely facilitate data queries, streamline search and filtering, and provide trend analysis for their business applications. Performed data center installations.",
     "logoImage": "iviis-logo.jpg",
-    "skills": ["VB.NET", "SQL", "Javascript"]
+    "website": "https://iviis.com/",
+    "skills": ["VB.NET", "SQL", "Javascript", "HTML & CSS", "Bootstrap 5", "Machine Learning"]
 },
 {
     "id": "marathon",
     "position": "Junior Engineer",
     "company": "Marathon Targets",
-    "endDate": "29-04-2024",
-    "startDate": "29-04-2024",
-    "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
+    "endDate": "01-01-2023",
+    "startDate": "29-04-2021",
+    "description": "Assembled and serviced electrical and mechanical sub-systems on robotic targets for defence customers. Assisted in the development, documentation and testing of new battery management systems.",
     "logoImage": "marathon-targets-logo.jpg",
-    "skills": ["VB.NET", "SQL", "Javascript"]
+    "website": "https://marathon-targets.com/",
+    "skills": ["System Design", "Electrical Troubleshooting", "Technical Documentation"]
 },
 {
     "id": "schneider",
     "position": "Engineering Intern",
     "company": "Schneider & Company",
-    "endDate": "29-04-2024",
-    "startDate": "29-04-2024",
-    "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
+    "endDate": "01-12-2020",
+    "startDate": "01-01-2020",
+    "description": "Automated various processes for tier 2 automotive manufacturers throughout the Midwest, developed a computer vision system with electromagnetic robot tooling for pallet unloading, and designed products such as screwing systems and cabling kits. Reduced assembly burden by introducing 3D printed alternatives for non-structural parts and conducted EPSON robot programming classes for local customers.",
     "logoImage": "schneider-company-logo.jpg",
-    "skills": ["VB.NET", "SQL", "Javascript"]
+    "website": "https://www.schneider-company.com/",
+    "skills": ["Industrial Automation", "Sensor Fusion", "3D Printing", "Solidworks", "Computer Vision", "EPSON Robots"]
 }
 ]

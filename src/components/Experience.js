@@ -20,7 +20,7 @@ function Experience({ data }) {
       >
         <div className="experience-siderail section-content-siderail">
           <div className="experience-siderail-date">
-            {formatDate(data.endDate)}
+            {data.endDate == "PRESENT" ? data.endDate : formatDate(data.endDate)}
           </div>
           <div className="siderail-vline-bold"/>
           <div className="experience-siderail-date">
