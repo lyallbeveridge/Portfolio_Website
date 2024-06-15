@@ -8,6 +8,7 @@
 
 .experience-main-content-container {
   width: 100%;
+  margin: 0 1em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -124,14 +125,6 @@
   cursor: pointer;
   width: 27px;
   height: 27px;
-}
-
-.siderail-vline-dotted {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ctext x='10' y='15' text-anchor='middle' font-size='16px' fill='%23FFFFFF' font-family='monospace'%3E|%3C/text%3E%3C/svg%3E");
-  background-repeat: repeat-y;
-  background-position: center;
-  height: 5em;
-  width: var(--siderail-width);
 }
 
 .timeline-selection-line {

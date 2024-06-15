@@ -6,30 +6,30 @@
 }
 
 .title-third {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #title-center-third {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    font-family: 'Roboto Mono';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  font-family: "Roboto Mono";
 }
 
 /* ASCII Head Animation */
 #profile-animation-canvas {
-    height: 33vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-  }
+  height: 33vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
 
 /* Contents and nav links */
 #contents-links-container {
@@ -63,25 +63,6 @@
   color: chartreuse;
   font-size: larger;
   font-weight: 100;
-}
-
-/* The ASCII art title */
-#page-title {
-  display: table;
-  margin: 0 auto;
-  font-size: 10px;
-}
-
-@media (max-width: 650px) {
-  #page-title {
-    font-size: 7px;
-  }
-}
-
-@media (max-width: 450px) {
-  #page-title {
-    font-size: 5px;
-  }
 }
 
 /* Icon button links */
