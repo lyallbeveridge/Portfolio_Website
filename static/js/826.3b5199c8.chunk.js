@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio_website=self.webpackChunkportfolio_website||[]).push([[826],{826:(e,t,a)=>{e.exports=a.p+"static/media/chore-tripwire-cover.8af7b95a7aca3a7dce55.png"}}]);

@@ -7,10 +7,26 @@
     "links": [
       {
         "text": "Report",
-        "url": "https://www.google.com/"
+        "url": "https://www.lyallbeveridge.com/Documents/Thesis_Report.pdf"
       }
     ],
-    "skills": ["Embedded Systems", "PCB Design", "Fusion 360", "C", "Altium Designer", "Automotive Electronics", "LTSpice"]
+    "skills": [
+      "Embedded Systems",
+      "PCB Design",
+      "Fusion 360",
+      "C",
+      "Altium Designer",
+      "Automotive Electronics",
+      "LTSpice"
+    ]
+  },
+  {
+    "id": "chore-tripwire",
+    "title": "The Chore Tripwire",
+    "subtitle": "A digital tripwire for lazy children",
+    "description": "This project won the UNSW Mechatronics society's Post-Your-Project competition in 2018. Consisting of a rudimentary GPS tracker device with cellular capabilities and a corresponding web interface, this device was used regularly by me when I lived with my parents and refused to clean the house until the last moment.",
+    "links": [],
+    "skills": []
   },
   {
     "id": "more-coming",

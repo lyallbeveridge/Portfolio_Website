@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.7b315b8b.css",
-    "main.js": "./static/js/main.982aa88d.js",
+    "main.js": "./static/js/main.62e719cd.js",
+    "static/js/826.3b5199c8.chunk.js": "./static/js/826.3b5199c8.chunk.js",
     "static/js/999.81bc994d.chunk.js": "./static/js/999.81bc994d.chunk.js",
     "static/js/54.92524382.chunk.js": "./static/js/54.92524382.chunk.js",
     "static/js/128.bf0cf869.chunk.js": "./static/js/128.bf0cf869.chunk.js",
@@ -10,13 +11,14 @@
     "static/js/14.7fd75b75.chunk.js": "./static/js/14.7fd75b75.chunk.js",
     "static/media/southco-thesis-cover.png": "./static/media/southco-thesis-cover.83774e41dd4575c696b0.png",
     "static/media/SmilingHead.stl": "./static/media/SmilingHead.716049668d1edb3dafeb.stl",
+    "static/media/chore-tripwire-cover.png": "./static/media/chore-tripwire-cover.8af7b95a7aca3a7dce55.png",
     "static/media/more-coming-cover.png": "./static/media/more-coming-cover.15eb620bcdb3a7abecb4.png",
     "index.html": "./index.html",
     "main.7b315b8b.css.map": "./static/css/main.7b315b8b.css.map",
-    "main.982aa88d.js.map": "./static/js/main.982aa88d.js.map"
+    "main.62e719cd.js.map": "./static/js/main.62e719cd.js.map"
   },
   "entrypoints": [
     "static/css/main.7b315b8b.css",
-    "static/js/main.982aa88d.js"
+    "static/js/main.62e719cd.js"
   ]
 }
