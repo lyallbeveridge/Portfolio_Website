@@ -1,0 +1,16 @@
+// --- THE CHORE TRIPWIRE --- //
+Have you ever been caught skipping chores? If you're a repeat offender like myself, this project is sure to help revolutionize your laziness. 
+How it works: If your parents tell you to finish cleaning before they get back and you want to leave it until the very last minute, slap the tripwire GPS module somewhere on their car and flick the switch. 
+The web interface can:
+- track their movements,
+- set a digital 'tripwire',
+- and send loud alerts when it is crossed to maximize your time fishing in WoW.
+Components:
+- Electron and LiPo (Like an Arduino with 3G),
+- GPS antenna and connectors,
+- Prefab plastic housing, switch, LED plus other bits and bobs,
+- and a simple web page using maps API.
+Really keen to see everyone else's projects!
+
+Summary
+This project won the UNSW Mechatronics society's Post-Your-Project competition in 2018. Consisting of a rudimentary GPS tracker device with cellular capabilities and a corresponding web interface, this device was used regularly by me when I lived with my parents and refused to clean the house until the last moment.	

@@ -21,9 +21,16 @@ function AboutSection() {
       });
   }, []);
 
+  // Markdown renderer
+  const renderers = {
+    link: ({href, children}) => {
+      return <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
+    }
+  }
+
   return (
     <>
-      <ReactMarkdown>{text}</ReactMarkdown>
+      <ReactMarkdown components={renderers} children={text}/>
     </>
   );
 }

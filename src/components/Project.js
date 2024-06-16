@@ -58,10 +58,10 @@ function Project({ data }) {
               {data.description}
             </div>
 
-            {/* {data.links.length > 0 && (
+            {data.links.length > 0 && (
               <div className="links-tags">
                 {data.links.map((link) => (
-                  <a href={link.url} className="link-tag">
+                  <a href={link.url} className="link-tag" target="_blank" rel="noopener noreferrer" key={link.url}>
                     <svg
                       className="link-icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ function Project({ data }) {
                   </a>
                 ))}
               </div>
-            )} */}
+            )}
 
             {data.skills.length > 0 && (
               <div className="skills-tags">

@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.1f5aadc3.css",
-    "main.js": "./static/js/main.38f82fba.js",
-    "static/js/55.b9e7d763.chunk.js": "./static/js/55.b9e7d763.chunk.js",
-    "static/js/472.68c0e1d0.chunk.js": "./static/js/472.68c0e1d0.chunk.js",
-    "static/js/978.b5abd17e.chunk.js": "./static/js/978.b5abd17e.chunk.js",
-    "static/js/455.fd3b3eaa.chunk.js": "./static/js/455.fd3b3eaa.chunk.js",
+    "main.css": "./static/css/main.7b315b8b.css",
+    "main.js": "./static/js/main.982aa88d.js",
+    "static/js/999.81bc994d.chunk.js": "./static/js/999.81bc994d.chunk.js",
+    "static/js/54.92524382.chunk.js": "./static/js/54.92524382.chunk.js",
+    "static/js/128.bf0cf869.chunk.js": "./static/js/128.bf0cf869.chunk.js",
+    "static/js/181.62a723ba.chunk.js": "./static/js/181.62a723ba.chunk.js",
+    "static/js/61.c7ec432e.chunk.js": "./static/js/61.c7ec432e.chunk.js",
+    "static/js/14.7fd75b75.chunk.js": "./static/js/14.7fd75b75.chunk.js",
+    "static/media/southco-thesis-cover.png": "./static/media/southco-thesis-cover.83774e41dd4575c696b0.png",
     "static/media/SmilingHead.stl": "./static/media/SmilingHead.716049668d1edb3dafeb.stl",
+    "static/media/more-coming-cover.png": "./static/media/more-coming-cover.15eb620bcdb3a7abecb4.png",
     "index.html": "./index.html",
-    "main.1f5aadc3.css.map": "./static/css/main.1f5aadc3.css.map",
-    "main.38f82fba.js.map": "./static/js/main.38f82fba.js.map"
+    "main.7b315b8b.css.map": "./static/css/main.7b315b8b.css.map",
+    "main.982aa88d.js.map": "./static/js/main.982aa88d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f5aadc3.css",
-    "static/js/main.38f82fba.js"
+    "static/css/main.7b315b8b.css",
+    "static/js/main.982aa88d.js"
   ]
 }
