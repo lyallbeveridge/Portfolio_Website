@@ -2,8 +2,15 @@
 
 A hacker zine style personal portfolio website for personal projects.
 
-## Content
+## Quick Start
 
+```
+npm install
+npm run build
+npm start
+```
+
+## Content
 
 ### Projects to List
 - Thesis
@@ -55,12 +62,12 @@ https://brittanychiang.com/
 - [X] Scroll shows full header section
 
 ### MVP TODO
-- [ ] Get the static document link working for the report PDF
+- [x] Get the static document link working for the report PDF
 - [ ] Fill in the projects (aim for 10)
-- [ ] Add Schneider and Company
+- [x] Add Schneider and Company
 - [ ] somehow and let the thing expand the full way to the right
-- [ ] Change to a softer colour theme
-- [ ] Decide whether to do work projects?
+- [x] Change to a softer colour theme
+- [x] Decide whether to do work projects?
 - [ ] Have a project text interpreter
 - [ ] Make engaging catch phrases
 - [ ] Put ASCII art in the skills section and fill that out (a grid would be nice)
@@ -84,7 +91,7 @@ https://brittanychiang.com/
 - [ ] Tags for filtering: software, hardware
 - [ ] Interactive bouncing ball simulator
 - [ ] Rotating ASCII art scan of my smiling head
-- [ ] Make the Divider into a section component with child input
+- [x] Make the Divider into a section component with child input
 - [x] Buttons with icons
 - [x] Typing the initial lettering
 - [x] Retyping the catchy messages of the
