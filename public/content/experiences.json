@@ -1,9 +1,23 @@
 [
   {
-    "id": "vidi-astra",
-    "position": "Electronics Engineer",
-    "company": "Vidi Astra",
+    "id": "morse-micro",
+    "position": "Applications Engineer",
+    "company": "Morse Micro",
     "endDate": "PRESENT",
+    "startDate": "29-08-2024",
+    "description": "TODO",
+    "logoImage": "morse-micro-logo.jpg",
+    "website": "https://www.morsemicro.com/",
+    "skills": [
+      "Embedded Linux",
+      "OpenWrt"
+    ]
+  },
+  {
+    "id": "vidi-astra",
+    "position": "Electronics Engineering Intern",
+    "company": "Vidi Astra",
+    "endDate": "29-08-2024",
     "startDate": "29-04-2024",
     "description": "Developed, tested, and integrated early prototype readout electronics for a spaceborne LiDAR 6U CubeSat. Assisted in the design and manufacture of the Spiral Blue Space Edge One computer V1.8 iteration. Implemented software and provided technical support for the University of Sydney's Waratah Seed, Toliman and ISAM missions as well as the federal government's Ghost Nets initiative.",
     "logoImage": "vidi-astra-logo.jpg",
