@@ -40,6 +40,14 @@ function Main() {
         <AboutSection />
       </SectionContent>
 
+      {/* Projects section */}
+      <SectionHeader containerDivId="projects">
+        <h1>Projects</h1>
+      </SectionHeader>
+      <SectionContent containerDivId="project-section">
+        <ProjectTimeline />
+      </SectionContent>
+
       {/* Experience section */}
       <SectionHeader containerDivId="experience">
         <h1>Experience</h1>
@@ -48,13 +56,6 @@ function Main() {
         <ExperienceTimeline />
       </SectionContent>
 
-      {/* Projects section */}
-      <SectionHeader containerDivId="projects">
-        <h1>Projects</h1>
-      </SectionHeader>
-      <SectionContent containerDivId="project-section">
-        <ProjectTimeline />
-      </SectionContent>
 
       <Divider />
       <Footer />

@@ -32,19 +32,6 @@ export default function TitleSection() {
             </li>
             <li>
               <a
-                href="#experience"
-                onClick={(event) => {
-                  event.preventDefault();
-                  document
-                    .querySelector("#experience")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                Experience
-              </a>
-            </li>
-            <li>
-              <a
                 href="#projects"
                 onClick={(event) => {
                   event.preventDefault();
@@ -54,6 +41,19 @@ export default function TitleSection() {
                 }}
               >
                 Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#experience"
+                onClick={(event) => {
+                  event.preventDefault();
+                  document
+                    .querySelector("#experience")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Experience
               </a>
             </li>
           </ul>
