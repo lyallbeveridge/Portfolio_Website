@@ -11,10 +11,7 @@ export default function ProfileAnimation() {
   const [sizes, setSizes] = useState({ width: 400, height: 400 });
 
   let camera, scene, renderer, effect, controls, loader;
-
   const headMesh = new THREE.Mesh();
-
-  const start = Date.now();
 
   function init() {
     camera = new THREE.PerspectiveCamera(
@@ -50,10 +47,6 @@ export default function ProfileAnimation() {
       headMesh.rotation.set(-Math.PI / 2, 0, Math.PI);
       headMesh.scale.set(20, 20, 20);
 
-      // Bounding box
-      headMesh.geometry.computeBoundingBox();
-      var bbox = headMesh.geometry.boundingBox;
-
       scene.add(headMesh);
     });
 
@@ -65,22 +58,22 @@ export default function ProfileAnimation() {
     effect.domElement.style.color = "white";
     effect.domElement.style.backgroundColor = "transparent";
 
+    // Remove empty canvas that appears by default before adding new domElement
     while (divRef.current.firstChild) {
       divRef.current.removeChild(divRef.current.firstChild);
     }
-
+    effect.domElement.style.cursor = "grab";
     divRef.current.appendChild(effect.domElement);
 
     controls = new OrbitControls(camera, effect.domElement);
+
+    // Allow the user to rotate the model but still preference page scrolling
+    controls.enableZoom = false;
   }
 
   function render() {
-    const timer = Date.now() - start;
-
     headMesh.rotateZ(0.01);
-
     controls.update();
-
     effect.render(scene, camera);
   }
 
