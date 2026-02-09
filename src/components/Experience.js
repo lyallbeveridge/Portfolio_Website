@@ -40,12 +40,16 @@ function Experience({ data }) {
         </div>
         <div className="experience-main-content-container">
           <div className="experience-header-container">
-            <img className="experience-logo-image" src={logoImage} />
+            <img className="experience-logo-image" src={logoImage} onClick={() => window.open(data.website, "_blank", "noopener")}/>
             <div className="experience-title-subtitle-container">
               <div className="experience-title-container">
                 <h2>{data.position}</h2>
               </div>
-              <div className="experience-subtitle">{data.company}</div>
+              <div className="experience-subtitle">
+                <a className="experience-subtitle-link" href={data.website} target="_blank" rel="noopener noreferrer">
+                  {data.company}
+                </a>
+              </div>
             </div>
           </div>
           <div className="experience-description subdued-font">{data.description}</div>
