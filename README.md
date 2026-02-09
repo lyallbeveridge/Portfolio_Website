@@ -6,7 +6,6 @@ A hacker zine style personal portfolio website for personal projects.
 
 ```
 npm install
-npm run build
 npm start
 ```
 
@@ -50,7 +49,6 @@ https://brittanychiang.com/
 ## Development
 
 ### Bugs
-- [ ] Make the text Inter
 - [x] Change the hover icons to just be brightness fade rather than expand
 - [ ] Delay before project section disappears
 - [ ] Google pixel stretched ascii ART (space shrinking)
@@ -63,16 +61,13 @@ https://brittanychiang.com/
 
 ### MVP TODO
 - [x] Get the static document link working for the report PDF
-- [ ] Fill in the projects (aim for 10)
+- [x] Fill in the projects (aim for 10)
 - [x] Add Schneider and Company
 - [ ] somehow and let the thing expand the full way to the right
 - [x] Change to a softer colour theme
 - [x] Decide whether to do work projects?
 - [ ] Have a project text interpreter
-- [ ] Make engaging catch phrases
-- [ ] Put ASCII art in the skills section and fill that out (a grid would be nice)
-    - programming languages
-    - familiar platforms: arduino, raspberry pi
+- [x] Make engaging catch phrases
 - [ ] Add some sort of third section (showcase, resume, qualifications)
 - [X] favicon_icon
 - [X] Fix introductory text to be shorter, not mention my name twice and be engaging.
@@ -80,7 +75,7 @@ https://brittanychiang.com/
 
 
 ### Feature Ideas
-- [ ] Sticky header with home button
+- [x] Sticky header with home button
 - [ ] More readable main font
 - [x] Scale whitespace to make a coverpage of for the entry point
 - [ ] Highlight project button and ranking on scroll focus
