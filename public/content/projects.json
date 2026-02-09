@@ -1,22 +1,114 @@
 [
   {
-    "id": "southco-thesis",
-    "title": "Undergraduate Thesis",
-    "subtitle": "Service body vehicle door control unit",
-    "description": "Developed in collaboration with Southco, this project involved designing and prototyping an electronic Door Control Unit (DCU) for service body vehicles. The product integrates Southco latches with almost any vehicle's central locking system, enhancing security and reducing operational inefficiencies. The final prototype met core requirements, including latch control and operator warning mechanisms, and is currently being developed for Australian consumers, with distribution already secured.",
+    "id": "thingino-cam",
+    "title": "Ingenic T23 HaLow Port",
+    "subtitle": "Porting HaLow to a cheap IP camera",
+    "description": [
+      "The Ingenic T23N is a $1 SoC that is designed for extremely cheap Linux-based IP cameras ($12 cameras on AliExpress).",
+      "Using an SD card HaLow adapter, I have been able to run 20+ Mbps UDP across the HaLow connection in both directions, which is more than enough for a 1080p30 video stream.",
+      "In terms of the software, I have made use of the Thingino buildroot-based SDK and used backports to get the HaLow driver running on the 3.10 kernel.",
+      "At the moment I have managed to get my hands on a 4.4.94 kernel (cannot post source) which allows me to run even more HaLow features and I am working on developing it into a fully fledged prototype.",
+      "Running the Morse Micro hostapd_s1g daemon as well as the normal 2.4 GHz hostap seems to steal resources, since a large portion of KMEM usage is reserved by the video encoder, so I am hopeful that the Native Linux HaLow driver will soon allow me to simply run one hostap daemon."
+    ],
     "links": [
       {
-        "text": "Report",
-        "url": "https://www.lyallbeveridge.com/content/documents/Thesis.pdf"
+        "text": "Thingino Camera Project",
+        "url": "https://thingino.com/",
+        "type": "website"
       }
     ],
     "skills": [
-      "Embedded Systems",
-      "PCB Design",
-      "Fusion 360",
-      "C",
-      "Altium Designer",
-      "Automotive Electronics",
+      "Thingino",
+      "Linux Backports"
+    ]
+  },
+  {
+    "id": "hn-temp-sensor",
+    "title": "Hawk's Nest Temperature Sensor",
+    "subtitle": "Custom ESP32-S3 PCB IoT temperature monitor",
+    "description": [
+      "Started as a Father's Day project, this small 5V USB-C custom PCB was designed to monitor the temperature at my parent's house.",
+      "I also wanted to learn hotplate assembly so I did that as well. It also uses an ENS210 sensor which I had to port (shim) the library from Arduino to ESP-IDF for. I had to iterate because the diode bank I used was beyond JLCPCB soldermask capabilities!",
+      "Future iterations will include a 3D printed enclosure, battery power and HaLow connectivity."
+    ],
+    "links": [
+      {
+        "text": "Source",
+        "url": "https://github.com/lyallbeveridge/HNTemperatureMonitor",
+        "type": "github"
+      }
+    ],
+    "skills": [
+      "KiCad (PCB Design)",
+      "ESP32-S3",
+      "PlatformIO",
+      "ESP-IDF",
+      "I2C"
+    ]
+  },
+  {
+    "id": "kindle-train-timetable",
+    "title": "Kindle Train Timetable",
+    "subtitle": "Helping my housemates streamline commuting",
+    "description": [
+      "I wanted to test out the Go programming language and also provide a convenient way for my housemates to check train timetables in a decorative way.",
+      "This project uses public (unfriendly) APIs provided by Transport for NSW and at this stage relies on a RPi 4 for SVG processing.",
+      "The photo is from halfway through but I have since completed the image layout."
+    ],
+    "links": [
+      {
+        "text": "Source",
+        "url": "https://github.com/lyallbeveridge/KindleTrainTimetable",
+        "type": "github"
+      },
+      {
+        "text": "HD timetable mockup",
+        "url": "https://raw.githubusercontent.com/lyallbeveridge/KindleTrainTimetable/refs/heads/main/server/output.png",
+        "type": "github"
+      }
+    ],
+    "skills": [
+      "Go"
+    ]
+  },
+  {
+    "id": "this-website",
+    "title": "Portfolio Website",
+    "subtitle": " ",
+    "description": [
+      "The one you're looking at right now! I am a fan of the simplicity of single-page applications.",
+      "This site is Vanilla React with no additional frontend frameworks or libraries."
+    ],
+    "links": [
+      {
+        "text": "Source",
+        "url": "https://github.com/lyallbeveridge/Portfolio_Website",
+        "type": "github"
+      }
+    ],
+    "skills": [
+      "React",
+      "Figma"
+    ]
+  },
+  {
+    "id": "southco-thesis",
+    "title": "Undergraduate Thesis",
+    "subtitle": "Service body vehicle door control unit",
+    "description": [
+      "Developed in collaboration with Southco, this project involved designing and prototyping an electronic Door Control Unit (DCU) for service body vehicles.",
+      "The product integrates Southco latches with almost any vehicle's central locking system, enhancing security and reducing operational inefficiencies.",
+      "The final prototype met core requirements, including latch control and operator warning mechanisms, and is currently being developed for Australian consumers, with distribution already secured."
+    ],
+    "links": [
+      {
+        "text": "Report",
+        "url": "https://www.lyallbeveridge.com/content/documents/Thesis.pdf",
+        "type": "pdf"
+      }
+    ],
+    "skills": [
+      "Fusion 360 (PCB Design)",
       "LTSpice"
     ]
   },
@@ -24,16 +116,13 @@
     "id": "chore-tripwire",
     "title": "The Chore Tripwire",
     "subtitle": "A digital tripwire for lazy children",
-    "description": "This project won the UNSW Mechatronics society's Post-Your-Project competition in 2018. Consisting of a rudimentary GPS tracker device with cellular capabilities and a corresponding web interface, this device was used regularly by me when I lived with my parents and refused to clean the house until the last moment.",
+    "description": [
+      "Consisting of a rudimentary GPS tracker device with cellular capabilities and a corresponding web interface, this device was used regularly by me when I lived with my parents and refused to clean the house until the last moment.",
+      "This project won the UNSW Mechatronics society's Post-Your-Project competition in 2018."
+    ],
     "links": [],
-    "skills": []
-  },
-  {
-    "id": "more-coming",
-    "title": "More coming soon...",
-    "subtitle": "Stay tuned!",
-    "description": "Retroactively documenting past projects, and completing new ones.",
-    "links": [],
-    "skills": []
+    "skills": [
+      "Particle Electron"
+    ]
   }
 ]
