@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from "react";
 import "../styles/project.css";
-import { formatDate } from "../utils/helpers";
-import ReactMarkdown from "react-markdown";
+
+// Explicitly tell webpack about the resources.
+const coverImages = require.context(
+  "../content/images/covers",
+  false,
+  /\.(png|jpe?g|svg)$/
+);
 
 function Project({ data }) {
-  // Dynamically import the cover image
-  // const coverImage = require(`../images/${data.coverImage}`);
-  // const coverImage = require(`C:\\Users\\lyall\\Documents\\Portfolio_Website\\src\\content\\images\\on-desk-in-stand.png`);
-  // const mainContentMarkdown = requi  re(`/Portfolio_Website/content/${data.id}.md`);
-
-  // Cover image
-
-  // Convert the main project content from markdown
   const [coverImage, setCoverImage] = useState("");
 
   useEffect(() => {
-    import(`../content/images/covers/${data.id}-cover.png`).then((image) => {
-      setCoverImage(image.default);
-    });
+    try {
+      const image = coverImages(`./${data.id}-cover.png`);
+      setCoverImage(image);
+    } catch (err) {
+      console.error("Cover load failed:", data.id, err);
+      setCoverImage("");
+    }
   }, [data.id]);
 
   // Handle the expansion of the project main content
@@ -90,43 +91,6 @@ function Project({ data }) {
         </div>
         <div className="siderail-vline-dotted section-content-siderail" />
       </>
-      {/* <div className="project-container" id={`${data.id}-project-container`}>
-        <div className="project-container-siderails" />
-        <div className="project-header-container">
-          <div className="project-title-subtitle-container">
-            <div className="project-title-container">
-              <div>
-                <h3>{data.title}</h3>
-              </div>
-            </div>
-            <p className="project-subtitle">{data.description}</p>
-          </div>
-          <div className="project-container-siderails">
-            <button
-              className="expand-project-btn"
-              onClick={toggleContentExpand}
-            >
-              {isExpanded ? "-" : "+"}
-            </button>
-          </div>
-        </div>
-        <div className="project-container-center">
-          <div className="siderail-vline-dotted project-container-siderails"></div>
-          <div className="project-content-container">
-            <img className="cover-image" src={coverImage} alt={data.title} />
-            <div
-              className={
-                isExpanded
-                  ? "project-main-content expanded"
-                  : "project-main-content"
-              }
-            >
-              <ReactMarkdown>{mainContent}</ReactMarkdown>
-            </div>
-          </div>
-          <div className="project-container-siderails"></div>
-        </div>
-      </div> */}
     </>
   );
 }

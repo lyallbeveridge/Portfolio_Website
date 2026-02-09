@@ -2,14 +2,25 @@ import React, { useEffect, useState } from "react";
 import "../styles/experience.css";
 import { formatDate } from "../utils/helpers";
 
+// Explicitly tell webpack about the resources.
+const logoImages = require.context(
+  "../content/images/logos",
+  false,
+  /\.(png|jpe?g|svg)$/
+);
+
 function Experience({ data }) {
   const [logoImage, setLogoImage] = useState("");
 
   // Get the image
   useEffect(() => {
-    import(`../content/images/logos/${data.logoImage}`).then((image) => {
-      setLogoImage(image.default);
-    });
+    try {
+      const image = logoImages(`./${data.logoImage}`);
+      setLogoImage(image);
+    } catch (err) {
+      console.error("Logo load failed:", data.logoImage, err);
+      setLogoImage("");
+    }
   }, [data.logoImage]);
 
   return (
