@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkportfolio_website=self.webpackChunkportfolio_website||[]).push([[54],{54:(e,s,t)=>{e.exports=t.p+"static/media/southco-thesis-cover.83774e41dd4575c696b0.png"}}]);

@@ -1,21 +1,50 @@
 [
   {
-    "id": "vidi-astra",
-    "position": "Electronics Engineer",
-    "company": "Vidi Astra",
+    "id": "morse-micro",
+    "position": "Applications Engineer",
+    "company": "Morse Micro",
     "endDate": "PRESENT",
+    "startDate": "29-08-2024",
+    "description": [
+      "Managed public firmware release cycles for the HaLowLink router and evaluation kit consumer products.",
+      "Developed a range testing tool and used it to lead field demonstrations for tier-1 customers across multiple US locations, demonstrating the world record (legal) 15+ km range and 3.8 Mbps throughput on 4 MHz channels",
+      "Assisted in the development of a mainline 900 MHz 802.11ah Linux driver and integrated it into existing OpenWrt products for customer evaluation.",
+      "Provided technical support to ODM customers and internal teams for hardware bringup and software integration"
+    ],
+    "logoImage": "morse-micro-logo.jpg",
+    "website": "https://www.morsemicro.com/",
+    "links": [],
+    "skills": [
+      "Embedded Linux",
+      "Networking",
+      "OpenWrt",
+      "802.11ah Wi-Fi HaLow",
+      "Linux Wireless Device Drivers",
+      "Bash",
+      "JS",
+      "C",
+      "USB, SDIO & SPI hardware debugging",
+      "EasyConnect Wi-Fi provisioning standards"
+    ]
+  },
+  {
+    "id": "vidi-astra",
+    "position": "Electronics Engineering Intern",
+    "company": "Vidi Astra (now Spiral Blue)",
+    "endDate": "29-08-2024",
     "startDate": "29-04-2024",
-    "description": "Developed, tested, and integrated early prototype readout electronics for a spaceborne LiDAR 6U CubeSat. Assisted in the design and manufacture of the Spiral Blue Space Edge One computer V1.8 iteration. Implemented software and provided technical support for the University of Sydney's Waratah Seed, Toliman and ISAM missions as well as the federal government's Ghost Nets initiative.",
+    "description": [
+      "Developed, tested, and integrated early prototype readout electronics for a spaceborne LiDAR 6U CubeSat.",
+      "Managed the design update and manufacture of the NVIDIA Jetson based Spiral Blue Space Edge One computer V1.8 iteration.",
+      "Implemented software and provided technical support for the University of Sydney's Waratah Seed, Toliman and ISAM missions as well as the federal government's Ghost Nets initiative."
+    ],
     "logoImage": "vidi-astra-logo.jpg",
     "website": "https://www.vidiastra.com/",
+    "links": [],
     "skills": [
-      "Embedded Systems",
-      "PCB Design",
-      "C & C++",
-      "Python",
-      "Altium Designer",
-      "Computer Vision",
-      "KiCad",
+      "KiCad (PCB Design)",
+      "NVIDIA Jetson Linux for Tegra",
+      "CAN bus",
       "LiDAR"
     ]
   },
@@ -25,29 +54,40 @@
     "company": "iViis",
     "endDate": "01-04-2024",
     "startDate": "29-01-2023",
-    "description": "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing. Developed and tested an internal AI chatbot designed to securely facilitate data queries, streamline search and filtering, and provide trend analysis for their business applications. Performed data center installations.",
+    "description": [
+      "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
+      "Setup a secure Azure-hosted OpenAI resource and integrated it with an SQL database to power a frontend dialog which generated SQL queries and trend analysis based on user input.",
+      "Performed data center installations."
+    ],
     "logoImage": "iviis-logo.jpg",
     "website": "https://iviis.com/",
+    "links": [],
     "skills": [
       "VB.NET",
       "SQL",
-      "Javascript",
+      "JS",
       "HTML & CSS",
       "Bootstrap 5",
-      "Machine Learning"
+      "OpenAI Embeddings API",
+      "OpenAI Tool Calling API",
+      "Azure Cloud Services"
     ]
   },
   {
     "id": "marathon",
-    "position": "Junior Engineer",
+    "position": "Assembly Technician",
     "company": "Marathon Targets",
     "endDate": "01-01-2023",
     "startDate": "29-04-2021",
-    "description": "Assembled and serviced electrical and mechanical sub-systems on robotic targets for defence customers. Assisted in the development, documentation and testing of new battery management systems.",
+    "description": [
+      "Assembled and serviced electrical and mechanical robotic targets for defence customers.",
+      "Assisted in the development, documentation and testing of a new battery management system."
+    ],
     "logoImage": "marathon-targets-logo.jpg",
     "website": "https://marathon-targets.com/",
+    "links": [],
     "skills": [
-      "System Design",
+      "High Voltage Battery Management Systems",
       "Electrical Troubleshooting",
       "Technical Documentation"
     ]
@@ -58,16 +98,35 @@
     "company": "Schneider & Company",
     "endDate": "01-12-2020",
     "startDate": "01-01-2020",
-    "description": "Automated various processes for tier 2 automotive manufacturers throughout the Midwest, developed a computer vision system with electromagnetic robot tooling for pallet unloading, and designed products such as screwing systems and cabling kits. Reduced assembly burden by introducing 3D printed alternatives for non-structural parts and conducted EPSON robot programming classes for local customers.",
+    "description": [
+      "Automated various processes for tier 2 automotive manufacturers throughout the Midwest.",
+      "Developed fully automated OEM manufacturing cell with computer vision system and electromagnetic tooling for bulk pallet unloading.",
+      "Reduced assembly burden by introducing 3D printed alternatives for non-structural parts.",
+      "Designed and manufactured robot add-on products such as screwing systems and cabling kits.",
+      "Taught EPSON robot programming classes for local customers."
+    ],
     "logoImage": "schneider-company-logo.jpg",
     "website": "https://www.schneider-company.com/",
+    "links": [
+      {
+        "text": "Brembo Brake Piston Linescan Cell",
+        "url": "https://www.youtube.com/watch?v=ng4mXYt0RwQ",
+        "type": "youtube"
+      },
+      {
+        "text": "Magnetic Bulk Unload Automation Cell",
+        "url": "https://www.youtube.com/watch?v=ELzzXbwulD0",
+        "type": "youtube"
+      }
+    ],
     "skills": [
-      "Industrial Automation",
-      "Sensor Fusion",
-      "3D Printing",
+      "High Voltage Control Panel Design",
+      "FDM 3D Printing",
       "Solidworks",
-      "Computer Vision",
-      "EPSON Robots"
+      "EPSON CV2 Computer Vision",
+      "EPSON SCARA & 6-Axis Robot Integration",
+      "Allen Bradley PLC",
+      "Manufacturing Project Management"
     ]
   }
 ]
