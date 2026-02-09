@@ -61,3 +61,10 @@
     justify-content: center;
   }
 
+  .project-description-line {
+    margin: 0 0 0.6em 0;
+  }
+
+  .project-description-line:last-child {
+    margin-bottom: 0;
+  }

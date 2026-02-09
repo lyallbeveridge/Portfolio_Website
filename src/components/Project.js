@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/project.css";
+import LinkWithIcon from "./LinkWithIcon";
 
 // Explicitly tell webpack about the resources.
 const coverImages = require.context(
@@ -56,24 +57,22 @@ function Project({ data }) {
               </div>
             </div>
             <div className="project-description subdued-font">
-              {data.description}
+              {data.description.map((line, index) => (
+                <p key={index} className="project-description-line">
+                  {line}
+                </p>
+              ))}
             </div>
 
-            {data.links.length > 0 && (
+            {data.links && data.links.length > 0 && (
               <div className="links-tags">
                 {data.links.map((link) => (
-                  <a href={link.url} className="link-tag" target="_blank" rel="noopener noreferrer" key={link.url}>
-                    <svg
-                      className="link-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      // style={{fill: "rgba(0, 0, 0, 1)", transform: "", msFilter: ""}}
-                    >
-                      <path d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"></path>
-                      <path d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"></path>
-                    </svg>
-                    {link.text}
-                  </a>
+                  <LinkWithIcon
+                    key={link.url}
+                    href={link.url}
+                    text={link.text}
+                    type={link.type}
+                  />
                 ))}
               </div>
             )}

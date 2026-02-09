@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/experience.css";
 import { formatDate } from "../utils/helpers";
+import LinkWithIcon from "./LinkWithIcon";
 
 // Explicitly tell webpack about the resources.
 const logoImages = require.context(
@@ -52,7 +53,25 @@ function Experience({ data }) {
               </div>
             </div>
           </div>
-          <div className="experience-description subdued-font">{data.description}</div>
+          <div className="experience-description subdued-font">
+            {data.description.map((line, index) => (
+              <p key={index} className="experience-description-line">
+                {line}
+              </p>
+            ))}
+          </div>
+          {data.links && data.links.length > 0 && (
+            <div className="links-tags">
+              {data.links.map((link) => (
+                <LinkWithIcon
+                  key={link.url}
+                  href={link.url}
+                  text={link.text}
+                  type={link.type}
+                />
+              ))}
+</div>
+          )}
           <div className="skills-tags">
             {data.skills.map((skill) => (
               <div className="skill-tag" key={skill}>

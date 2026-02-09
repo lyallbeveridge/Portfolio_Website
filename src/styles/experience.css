@@ -33,12 +33,18 @@
   width: 100%;
   display: flex;
   gap: 1em;
+  align-items: center;
 }
 
 .experience-logo-image {
   width: 68px;
   height: 68px;
   border-radius: 2px;
+}
+
+.experience-logo-image:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
 }
 
 .experience-title-subtitle-container {
@@ -48,3 +54,18 @@
   justify-content: center;
 }
 
+.experience-description-line {
+  margin: 0 0 0.6em 0;
+}
+
+.experience-description-line:last-child {
+  margin-bottom: 0;
+}
+
+.experience-subtitle-link {
+  text-decoration: none;
+}
+
+.experience-subtitle-link:hover {
+  text-decoration: underline;
+}
