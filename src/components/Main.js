@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import TitleSection from "./TitleSection";
 import SectionHeader from "./SectionHeader";
 import SectionContent from "./SectionContent";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 function Main() {
   function toggleLightMode() {
@@ -59,6 +60,7 @@ function Main() {
 
       <Divider />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }

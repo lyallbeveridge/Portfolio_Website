@@ -123,10 +123,9 @@
 }
 
 .link-icon {
- fill: whitesmoke;
- width: 12px;
- height: 12px;
- margin-right: 0.35em;
+  fill: currentColor;
+  width: 12px;
+  height: 12px;
 }
 
 .subdued-font {

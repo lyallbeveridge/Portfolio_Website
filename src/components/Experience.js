@@ -70,7 +70,7 @@ function Experience({ data }) {
                   type={link.type}
                 />
               ))}
-</div>
+            </div>
           )}
           <div className="skills-tags">
             {data.skills.map((skill) => (

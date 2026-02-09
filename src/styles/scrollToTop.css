@@ -1,0 +1,64 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(12, 12, 12, 0.85);
+  color: var(--font-color);
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 200ms ease, transform 200ms ease;
+  z-index: 50;
+}
+
+.scroll-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll-to-top:hover .scroll-to-top-icon {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll-to-top:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 3px;
+}
+
+.scroll-to-top:focus-visible .scroll-to-top-icon {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.scroll-to-top-icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+@media (max-width: 650px) {
+  .scroll-to-top {
+    bottom: 16px;
+  }
+}
