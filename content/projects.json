@@ -6,8 +6,8 @@
     "description": [
       "The Ingenic T23N is a $1 SoC that is designed for extremely cheap Linux-based IP cameras ($12 cameras on AliExpress).",
       "Using an SD card HaLow adapter, I have been able to run 20+ Mbps UDP across the HaLow connection in both directions, which is more than enough for a 1080p30 video stream.",
-      "In terms of the software, I have made use of the Thingino buildroot-based SDK and used backports to get the HaLow driver running on the 3.10 kernel.",
-      "At the moment I have managed to get my hands on a 4.4.94 kernel (cannot post source) which allows me to run even more HaLow features and I am working on developing it into a fully fledged prototype.",
+      "In terms of the software, I have made use of the Thingino Buildroot-based SDK and used backports to get the HaLow driver running on the 3.10 kernel.",
+      "At the moment, I have managed to get my hands on a 4.4.94 kernel (can't post the source), which allows me to run even more HaLow features, and I am working on developing it into a fully fledged prototype.",
       "Running the Morse Micro hostapd_s1g daemon as well as the normal 2.4 GHz hostap seems to steal resources, since a large portion of KMEM usage is reserved by the video encoder, so I am hopeful that the Native Linux HaLow driver will soon allow me to simply run one hostap daemon."
     ],
     "links": [
@@ -27,9 +27,9 @@
     "title": "Hawk's Nest Temperature Sensor",
     "subtitle": "Custom ESP32-S3 PCB IoT temperature monitor",
     "description": [
-      "Started as a Father's Day project, this small 5V USB-C custom PCB was designed to monitor the temperature at my parent's house.",
-      "I also wanted to learn hotplate assembly so I did that as well. It also uses an ENS210 sensor which I had to port (shim) the library from Arduino to ESP-IDF for. I had to iterate because the diode bank I used was beyond JLCPCB soldermask capabilities!",
-      "Future iterations will include a 3D printed enclosure, battery power and HaLow connectivity."
+      "Started as a Father's Day project, this small 5V USB-C custom PCB was designed to monitor the temperature at my parents' house.",
+      "I also wanted to learn hotplate assembly, so I did that as well. It also uses an ENS210 sensor, which I had to port (shim) from Arduino to ESP-IDF. I had to iterate because the diode bank I used was beyond JLCPCB soldermask capabilities!",
+      "Future iterations will include a 3D-printed enclosure, battery power, and HaLow connectivity."
     ],
     "links": [
       {
@@ -52,8 +52,8 @@
     "subtitle": "Helping my housemates streamline commuting",
     "description": [
       "I wanted to test out the Go programming language and also provide a convenient way for my housemates to check train timetables in a decorative way.",
-      "This project uses public (unfriendly) APIs provided by Transport for NSW and at this stage relies on a RPi 4 for SVG processing.",
-      "The photo is from halfway through but I have since completed the image layout."
+      "This project uses public (unfriendly) APIs provided by Transport for NSW and, at this stage, relies on a Raspberry Pi 4 for SVG processing.",
+      "The photo is from halfway through, but I have since completed the image layout."
     ],
     "links": [
       {
@@ -77,7 +77,7 @@
     "subtitle": " ",
     "description": [
       "The one you're looking at right now! I am a fan of the simplicity of single-page applications.",
-      "This site is Vanilla React with no additional frontend frameworks or libraries."
+      "This site is vanilla React with no additional frontend frameworks or libraries."
     ],
     "links": [
       {
@@ -118,7 +118,7 @@
     "subtitle": "A digital tripwire for lazy children",
     "description": [
       "Consisting of a rudimentary GPS tracker device with cellular capabilities and a corresponding web interface, this device was used regularly by me when I lived with my parents and refused to clean the house until the last moment.",
-      "This project won the UNSW Mechatronics society's Post-Your-Project competition in 2018."
+      "This project won the UNSW Mechatronics Society's Post-Your-Project competition in 2018."
     ],
     "links": [],
     "skills": [

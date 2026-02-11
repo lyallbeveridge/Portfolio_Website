@@ -6,46 +6,53 @@
     "endDate": "PRESENT",
     "startDate": "29-08-2024",
     "description": [
-      "Managed public firmware release cycles for the HaLowLink router and evaluation kit consumer products.",
-      "Developed a range testing tool and used it to lead field demonstrations for tier-1 customers across multiple US locations, demonstrating the world record (legal) 15+ km range and 3.8 Mbps throughput on 4 MHz channels",
-      "Assisted in the development of a mainline 900 MHz 802.11ah Linux driver and integrated it into existing OpenWrt products for customer evaluation.",
-      "Provided technical support to ODM customers and internal teams for hardware bringup and software integration"
+      "Performed full-stack development for OpenWrt-based Wi-Fi HaLow router products.",
+      "Achieved a world-record 20.8 km Wi-Fi HaLow link using my custom testing tool.",
+      "Assisted ODM customers with hardware bring-up and driver integration."
     ],
     "logoImage": "morse-micro-logo.jpg",
     "website": "https://www.morsemicro.com/",
-    "links": [],
+    "links": [
+      {
+        "text": "My Morse Micro Github Profile",
+        "url": "https://github.com/morse-lyallbeveridge",
+        "type": "github"
+      },
+      {
+        "text": "My Morse Micro Forum Profile",
+        "url": "https://community.morsemicro.com/u/packet_sniffer/summary",
+        "type": "website"
+      }
+    ],
     "skills": [
       "Embedded Linux",
-      "Networking",
-      "OpenWrt",
+      "OpenWRT",
+      "Shell Scripting",
+      "JavaScript",
+      "C",
       "802.11ah Wi-Fi HaLow",
       "Linux Wireless Device Drivers",
-      "Bash",
-      "JS",
-      "C",
       "USB, SDIO & SPI hardware debugging",
-      "EasyConnect Wi-Fi provisioning standards"
     ]
   },
   {
     "id": "vidi-astra",
     "position": "Electronics Engineering Intern",
-    "company": "Vidi Astra (now Spiral Blue)",
+    "company": "Vidi Astra",
     "endDate": "29-08-2024",
     "startDate": "29-04-2024",
     "description": [
-      "Developed, tested, and integrated early prototype readout electronics for a spaceborne LiDAR 6U CubeSat.",
-      "Managed the design update and manufacture of the NVIDIA Jetson based Spiral Blue Space Edge One computer V1.8 iteration.",
-      "Implemented software and provided technical support for the University of Sydney's Waratah Seed, Toliman and ISAM missions as well as the federal government's Ghost Nets initiative."
+      "Conducted early R&D for the LiDAR readout electronics on a 6U CubeSat.",
+      "Co-designed and managed manufacturing for the SE-1 V1.8 space-hardened NVIDIA Jetson platform."
     ],
     "logoImage": "vidi-astra-logo.jpg",
     "website": "https://www.vidiastra.com/",
     "links": [],
     "skills": [
-      "KiCad (PCB Design)",
+      "KiCAD",
+      "LiDAR",
       "NVIDIA Jetson Linux for Tegra",
-      "CAN bus",
-      "LiDAR"
+      "CAN bus"
     ]
   },
   {
@@ -55,20 +62,19 @@
     "endDate": "01-04-2024",
     "startDate": "29-01-2023",
     "description": [
-      "Performed ticket-based full stack development on the SaaS cloud platform for feature development and bug fixing.",
-      "Setup a secure Azure-hosted OpenAI resource and integrated it with an SQL database to power a frontend dialog which generated SQL queries and trend analysis based on user input.",
-      "Performed data center installations."
+      "Performed full-stack SaaS development using VB.NET, SQL and JavaScript.",
+      "Built an Azure-hosted OpenAI integration for customers to securely query and analyse their SQL data.",
+      "Managed datacenter installations."
     ],
     "logoImage": "iviis-logo.jpg",
     "website": "https://iviis.com/",
     "links": [],
     "skills": [
-      "VB.NET",
+      "Visual Basic .NET (VB.NET)",
       "SQL",
-      "JS",
+      "JavaScript",
       "HTML & CSS",
       "Bootstrap 5",
-      "OpenAI Embeddings API",
       "OpenAI Tool Calling API",
       "Azure Cloud Services"
     ]
@@ -80,8 +86,7 @@
     "endDate": "01-01-2023",
     "startDate": "29-04-2021",
     "description": [
-      "Assembled and serviced electrical and mechanical robotic targets for defence customers.",
-      "Assisted in the development, documentation and testing of a new battery management system."
+      "Assembled robotic targets for defence customers."
     ],
     "logoImage": "marathon-targets-logo.jpg",
     "website": "https://marathon-targets.com/",
@@ -99,11 +104,10 @@
     "endDate": "01-12-2020",
     "startDate": "01-01-2020",
     "description": [
-      "Automated various processes for tier 2 automotive manufacturers throughout the Midwest.",
-      "Developed fully automated OEM manufacturing cell with computer vision system and electromagnetic tooling for bulk pallet unloading.",
-      "Reduced assembly burden by introducing 3D printed alternatives for non-structural parts.",
-      "Designed and manufactured robot add-on products such as screwing systems and cabling kits.",
-      "Taught EPSON robot programming classes for local customers."
+      "Automated a variety of industrial processes for Tier 2 automotive manufacturers in the US Midwest.",
+      "Developed an automated cell with computer vision and electromagnetic tooling for bulk pallet unloading.",
+      "Introduced 3D-printed alternatives for non-structural parts.",
+      "Designed optional products such as screw-driving systems and cabling kits."
     ],
     "logoImage": "schneider-company-logo.jpg",
     "website": "https://www.schneider-company.com/",
@@ -120,13 +124,12 @@
       }
     ],
     "skills": [
+      "3D Printing",
+      "SOLIDWORKS",
+      "PLC Allen Bradley",
       "High Voltage Control Panel Design",
-      "FDM 3D Printing",
-      "Solidworks",
       "EPSON CV2 Computer Vision",
-      "EPSON SCARA & 6-Axis Robot Integration",
-      "Allen Bradley PLC",
-      "Manufacturing Project Management"
+      "EPSON SCARA & 6-Axis Robot Integration"
     ]
   }
 ]
