@@ -23,7 +23,6 @@ npm start
 - Trading twitter bot
 - MATLAB SLAM
 - MATLAB Control Systems
-- This website
 
 
 ### Project Input Potential Tags
@@ -49,49 +48,54 @@ https://brittanychiang.com/
 ## Development
 
 ### Bugs
-- [x] Change the hover icons to just be brightness fade rather than expand
 - [ ] Delay before project section disappears
 - [ ] Google pixel stretched ascii ART (space shrinking)
 - [ ] Messenger preview stretched ascii ART
 - [ ] Images massive on zoom out
-- [ ] Image captions
 - [ ] Fix install app suggestion
-- [ ] Loading animation screen (1 animation cycle minimum and then wait for the head to load)
+- [x] Change the hover icons to just be brightness fade rather than expand
 - [X] Scroll shows full header section
 
 ### MVP TODO
+- [ ] Image captions
+- [ ] Loading animation screen (1 animation cycle minimum and then wait for the head to load)
+- [ ] Pre-load blurred images
+- [ ] Pin-light and fade in on head animation
+- [ ] Dotpoints on the experience section
+- [ ] Fallback font
+- [ ] Installed font
 - [x] Get the static document link working for the report PDF
 - [x] Fill in the projects (aim for 10)
 - [x] Add Schneider and Company
-- [ ] somehow and let the thing expand the full way to the right
+- [x] somehow and let the thing expand the full way to the right
 - [x] Change to a softer colour theme
 - [x] Decide whether to do work projects?
-- [ ] Have a project text interpreter
 - [x] Make engaging catch phrases
-- [ ] Add some sort of third section (showcase, resume, qualifications)
 - [X] favicon_icon
 - [X] Fix introductory text to be shorter, not mention my name twice and be engaging.
 - [X] Fix timeline VLine toggle fade
-
+- [ ] ~~Have a project text interpreter~~
+- [ ] ~~Add some sort of third section (showcase, resume, qualifications)~~
 
 ### Feature Ideas
-- [x] Sticky header with home button
-- [ ] More readable main font
-- [x] Scale whitespace to make a coverpage of for the entry point
+- [ ] Image Carousel (use single arrow version of the scroll-to-top button)
 - [ ] Highlight project button and ranking on scroll focus
 - [ ] Sticky header with navigation and toggle theme button: fade after scrolling past the last section of contents (?)
-- [ ] Window terminal emulator style, previous commands, help with other features
-- [ ] Search
 - [ ] Ranking system: timeline, complexity (stars), time invested
 - [ ] Tags for filtering: software, hardware
 - [ ] Interactive bouncing ball simulator
 - [ ] Rotating ASCII art scan of my smiling head
+- [x] Sticky header with home button
+- [x] Scale whitespace to make a coverpage of for the entry point
+- [x] More readable main font
 - [x] Make the Divider into a section component with child input
 - [x] Buttons with icons
 - [x] Typing the initial lettering
 - [x] Retyping the catchy messages of the
 - [x] Animation transitions for the text expand
 - [x] RHS timeline, thumbnails, month & year
+- [ ] ~~Window terminal emulator style, previous commands, help with other features~~
+- [ ] ~~Search~~
 
 ## Aesthetics
 ### Fonts
